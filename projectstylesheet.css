@@ -1,0 +1,65 @@
+.navbar {
+	background-color: #ffffff;
+	overflow: auto;
+	margin: -8px -8px 0px -8px;
+}
+
+.logo img {
+	width: 50px;
+	height: 50px;
+	margin: 6px 0px 0px 14px;
+	float: left;
+}
+
+h1 {
+	font-family: Lusitana;
+	font-size: 24px;
+	margin-left: 48px;
+	float: left;
+}
+
+nav {
+	text-align: center;
+	margin: 20px 0px 0px 7px;
+	position: absolute;
+	left: 450px; 
+	float: right;
+}
+
+nav a {
+	text-decoration: none;
+	font-family: 'Lusitana', serif;
+	font-size: 20px;
+	margin-left: 47px;
+	margin-right: 47px;
+}
+
+a:link {
+	color: black
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:visited {
+	color: black;
+}
+
+.squares {
+	width: 798px;
+	margin: 105px 0px 105px 225px;
+	overflow: auto;
+	
+}
+
+.squares img {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: -2px;
+}
+
+body {
+	background-color: #e5e5e5;
+}

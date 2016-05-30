@@ -1,0 +1,118 @@
+.navbar {
+	background-color: #f2f2f2;
+	overflow: auto;
+	margin: -8px -8px 0px -8px;
+}
+
+.logo img {
+	width: 50px;
+	height: 50px;
+	margin: 6px 0px 0px 14px;
+	float: left;
+}
+
+h1 {
+	font-family: Lusitana;
+	font-size: 24px;
+	margin-left: 48px;
+	float: left;
+}
+
+nav {
+	text-align: center;
+	margin: 20px 0px 0px 7px;
+	position: absolute;
+	left: 450px; 
+	float: right;
+}
+
+nav a {
+	text-decoration: none;
+	font-family: 'Lusitana', serif;
+	font-size: 20px;
+	margin-left: 47px;
+	margin-right: 47px;
+}
+
+nav a:link {
+	color: black
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+nav a:visited {
+	color: black;
+}
+
+img {
+	width: 480px;
+	height: 615px;
+	float: left;
+	margin-left: -8px;
+}
+
+.description {
+	float: left;
+}
+
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.bv_about {
+	margin: 55px 0px 40px 200px;
+	text-align: center;
+}
+
+.bv_about h4 {
+	margin-top: -10px;
+}
+
+.clv_about {
+	margin: 60px 0px 40px 200px;
+	text-align: center;
+}
+
+.clv_about h4 {
+	margin-top: -10px;
+}
+
+.clv_about a {
+	color: black;
+}
+
+.clv_about a:visited {
+	color: black;
+}
+
+.other_gigs {
+	margin: 60px 0px 0px 200px;
+	text-align: center;
+}
+
+ul {
+	margin-top: -8px;
+	list-style: none;
+	padding: 0px;
+}
+
+li {
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	margin: 10px 0px 10px 0px;
+}
+
+body {
+	background-color: white;
+}
