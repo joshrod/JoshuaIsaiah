@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-	<html>
+	<html id="abouthtml">
 		<head>
 			<title>About</title>
-			<link href="aboutstylesheet.css" rel="stylesheet" type="text/css" />
+			<link href="custom.css" rel="stylesheet" type="text/css" />
 			<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600,700,400' rel='stylesheet' type='text/css'>
 			<link href='https://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
 			<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700|Overlock+SC' rel='stylesheet' type='text/css'>
 			<link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
 		</head>
-		<body>
+		<body id="aboutbody">
 			<div class="navbar">
 				<div class="logo">
 					<img src="JR Logo.png" />
@@ -17,38 +17,65 @@
 					<h1>Joshua Isaiah Rodriguez</h1>
 				</div>
 				<nav>
-					<a href="index.html" title="Just Hold On, We're Going">Home</a>
-					<a href="projects.html" title="From The">Projects</a>
-					<a href="dj.html" title="Now That's My">DJ</a>
-					<a href="#" title="What We Talkin'">About</a>
+					<a href="index.html" class="navlinks" title="Just Hold On, We're Going">Home</a>
+					<a href="projects.html" class="navlinks" title="From The">Projects</a>
+					<a href="dj.html" class="navlinks" title="Now That's My">DJ</a>
+					<a href="#" class="active navlinks" title="What We Talkin'">About</a>
 				<nav>
 			</div>
 			<div class="about">
-				<p>University of Wisconsin-Madison alumnus. Born and raised in San Antonio, Texas. Focused on Graphic Design, Web Design, and Mobile Development. In my spare time I listen to and mix music, watch superhero movies, and mess with electronics.</p>
-			</div>
-			<div class="skills">
-				<h4>Skills</h4>
-				<ul>
-					<li>HTML/CSS</li>
-					<li>Javascript/jQuery</li>
-					<li>Java</li>
-					<li>XML</li>
-					<li>Photoshop/Illustrator</li>
-					<li>Premiere</li>
-				</ul>
-				<div class="resume">
-					<a href="Joshua Rodriguez Resume.docx" target="_blank">Joshua Rodriguez's Resume</a>
+				<div class="textwrap">
+					<p>University of Wisconsin-Madison alumnus. Born and raised in San Antonio, Texas. Focused on Graphic Design, Web Design, and Mobile Development. In my spare time I listen to and mix music, watch superhero movies, and mess with electronics.</p>
 				</div>
-				<div class="social">
-					<a href="https://www.facebook.com/joshrodriguez17" target="_blank" >
-						<img src="fblogo.png" alt="Facebook" >
+				<div class="resume">
+					<a id="resumelink" href="Joshua Rodriguez Resume.docx" target="_blank">Download Joshua Rodriguez's Resume</a>
+				</div>
+				<div class="aboutlinks">
+					<a href="http://www.facebook.com/joshrodriguez17" target="_blank">
+						<img src="facebook.png" alt="Facebook" >
 					</a>
 					<a href="mailto:josh@joshuaisaiah.com" >
-						<img src="email.png" alt="Email" >
+						<img src="mailsq.png" alt="Email" >
 					</a>
 					<a href="https://www.linkedin.com/in/joshua-rodriguez-aa8aa7121" target="_blank">
-						<img src="linkdin.png" alt="LinkdIn">
+						<img src="linked.png" alt="LinkedIn" >
 					</a>
+					<a href="https://github.com/joshrod" target="_blank">
+						<img src="gitsq.png" alt="GitHub" >
+					</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h4 id="skillsheader">Skills</h4>
+				<div class="skillsq">
+					<div class="tilewrap">
+						<img src="pstile.png" alt="Photoshop" >
+						<!--<p class="skillcap">Photoshop</p> -->
+					</div>
+					<div class="tilewrap">
+						<img src="aitile.png" alt="Illustrator" >
+						<!--<p class="skillcap">Illustrator</p>-->
+					</div>
+					<div class="tilewrap">
+						<img src="prtile.png" alt="Premiere" >
+						<!--<p class="skillcap">Premiere</p>-->
+					</div>
+					<div class="tilewrap">
+						<img src="droidtile.png" alt="Android Studio" >
+						<!--<p class="skillcap">Android Studio</p>-->
+					</div>
+					<div class="tilewrap">
+						<img src="javatile.png" alt="Java Programming" >
+						<!--<p class="skillcap">Java Programming</p>-->
+					</div>
+					<div class="tilewrap">
+						<img src="htmltile.png" alt="HTML/CSS" >
+						<!--<p class="skillcap">HTML/CSS</p>-->
+					</div>
+					<div class="tilewrap">
+						<img src="jstile.png" alt="JavaScript/jQuery" >
+						<!--<p class="skillcap">JavaScript/jQuery</p>-->
+					</div>
 				</div>
 			</div>
 		</body>
