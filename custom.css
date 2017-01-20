@@ -1,60 +1,112 @@
+html {
+	font-size: 62.5%;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
 .navbar {
-	background-color: #FDFDFD;
+	background-color: #FCFCFC;
 	overflow: hidden;
 	opacity: 0.9;
-	width: 100%;
-	height: 50px;
-	max-height: 50px;
-	display: block;
-	border-bottom: 1px solid #e3e3e3;
+	height: 5em;
+	border-bottom: .1em solid #e3e3e3;
+	margin: 0;
+	padding: 0;
 }
 
 .logo img {
-	width: 40px;
-	height: 40px;
-	display: block;
-	margin: 5px;
+	width: 4.5em;
+	height: 4.5em;
+	margin: .4em;
+	float: left;
+}
+
+#name {
+	margin-left: 3%;
+	margin-right: 3%;
 	float: left;
 }
 
 #name h1 {
-	font-family: Lusitana;
-	font-size: 20px;
-	margin-left: 2%;
-	display: block;
+	font-family: 'Lusitana', serif;
+	font-size: 2em;
+	padding: auto;
+}
+
+nav a {
 	float: left;
-	
-}
-
-nav {
 	display: inline-block;
-	margin-left: 3%;
-}
-
-.navlinks {
 	text-decoration: none;
 	font-family: 'Lusitana', serif;
-	font-size: 16px;
-	display: block;
-	float: left;
-	height: 50px;
-	padding: 17px 15px 0px 15px;
+	font-size: 1.6em;
+	padding: 1em;
+	margin: 0;
+	text-align: center;
 }
 
-.navlinks:link {
+#more {
+	display: none;
+}
+
+nav a:link {
 	color: #666666;
 }
 
-.navlinks:hover {
+nav a:visited {
+	color: #666666;
+}
+
+nav a:hover {
 	color: black;
-}
-
-.navlinks:visited {
-	color: #666666;
 }
 
 .active {
 	background-color: #e3e3e3;
+}
+
+#responsive {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	
+}
+
+.rnav {
+	background-color: #FCFCFC;
+	overflow: hidden;
+	opacity: 0.9;
+	height: 5em;
+	border-bottom: .1em solid #e3e3e3;
+	border-top: .1em solid #e3e3e3;
+	text-align: left;
+}
+
+.rnav a {
+	text-decoration: none;
+	font-family: 'Lusitana', serif;
+	font-size: 1.8em;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: .8em;
+}
+
+.rnav a:link {
+	color: #000000;
+}
+
+.rnav a:visited {
+	color: #000000;
+}
+
+.rnav a:hover {
+	color: #666666;
 }
 
 #indexbody {
@@ -63,43 +115,38 @@ nav {
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
-	padding: 0px;
-	margin: 0px;
-}
-
-#projectbody {
-	margin: 0px;
-	padding: 0px;
 }
 
 .squares {
-	max-width: 808px;
-	width: 100%;
-	margin: 8% auto;
-	overflow: auto;
+	max-width: 80%;
+	margin: 4% auto;
 }
 
-.squares img {
-	display: inline-block;
-	max-width: 25%;
-	max-height: 25%;
-	min-width: 193px;
-	min-height: 193px;
-	margin: -2px;
+.sqpic:hover {
+	-webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+	
+.sqpic {
+	height: 25%;
+	width: 25%;
+	float: left;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
 }
 
-#djhtml, #djbody {
-	height: 100%;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
+#djbody {
 	overflow: hidden;
+	display: block;
 }
 
 #djpic {
 	width: 40%;
 	height: 100%;
-	max-height: 100%;
 	background: url("DJ JoshRod.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -109,79 +156,99 @@ nav {
 
 .description {
 	font-family: 'Josefin Sans', sans-serif;
-	float: left;
-	min-height: 60%;
-	max-height: 100%;
-	height: 100%;
 	width: 60%;
-	overflow: hidden;
+	float: right;
 	text-align: center;
 }
 
-.bv_about {
-	height: 31.5%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.bv_about, .clv_about, .other_gigs {
+	padding: 1em;
+	font-size: 1.5em;
 }
 
-.clv_about {
-	height: 31.5%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#profile {
+	margin: 2% auto 1%;
+	text-align: center;
 }
 
-.other_gigs {
-	height: 31.5%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#profile img {
+	max-width: 15em;
+	max-height: 15em;
 }
 
-#aboutbody {
-	margin: 0px;
-	padding: 0px;
-	width: 100%;
-	height: 100%;
-}
-
-.about {
-	width: 80%;
-	height: 100%;
-	float: left;
-	max-height: 100%;
-}
-
-.about p {
+#aboutwrap p {
 	font-family: 'Lusitana', serif;
-	font-size: 32px;
+	font-size: 2.7em;
 	text-align: center;
-	padding: 5% 5% 1% 5%;
-	margin-top: 16%;
+	margin: 0% 5% 2%;
+}
+
+#caption {
+	text-align: center;
+	width: 100%;
+	margin: -0.5% auto -1%;
+}
+
+#caption p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.7em;
+	text-decoration: underline;
+}
+
+#skills {
+	margin: 2% 2% 2.5%;
+}
+
+.topskills {
+	width: 70%;
+	margin: auto;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	display: flex;
+		-webkit-box-pack: justify;
+  		-webkit-justify-content: space-around;
+  		-ms-flex-pack: justify;
+	justify-content: space-around;
+}
+
+.iconwrap {
+	text-align: center;
+}
+
+.icon {
+	min-width: 7em;
+	min-height: 7em;
+	width: 55%;
+	height: auto;
 }
 
 .resume {
 	text-align: center;
-	margin: 3%;
+	margin: 1% 1% 1.5%;
 }
 
 #resumelink {
-	font-family: 'Overlock SC', sans-serif;
-	text-align: center;
-	font-size: 18px;
-}
-
-#resumelink:hover {
-	text-decoration: underline;
+	background-color: #003366;
+	border-radius: 5px;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.8em;
+	padding: 5px;
 }
 
 #resumelink:link {
-	color: black;
+	color: white;
+	text-decoration: none;
 }
 
+
+#resumelink:hover {
+	box-shadow: .1em .1em .5em gray;
+}
+
+
 #resumelink:visited {
-	color: black;
+	color: white;
 }
 
 .aboutlinks {
@@ -189,45 +256,80 @@ nav {
 }
 
 .aboutlinks img {
-	max-width: 7%;
-	max-height: 7%;
-	min-height: 45px;
-	min-width: 45px;
-	margin: 8px;
+	width: 5%;
+	height: 5%;
+	min-height: 4.5em;
+	min-width: 4.5em;
+	margin: 1.5em;
 }
 
-.skills {
-	height: 100%;
-	width: 19%;
-	max-height: 100%;
-	float: left;
-	border-left: 1px solid #e3e3e3;
+.aboutlinks img:hover {
+	box-shadow: .1em .2em .5em gray;
 }
 
-#skillsheader {
-	margin: 10px;
-	text-align: center;
-	font-family: 'Overlock SC', sans-serif;
-	font-size: 18px;
+@media screen and (max-width:920px) {
+.sqpic {
+		height: 33%;
+		width: 33%;
+	}
 }
 
-.tilewrap {
-	width: 100%;
-	overflow: hidden;
-	/*display: flex;
-	align-items: center; */
-	text-align: center;
+@media screen and (max-width:700px) {
+.sqpic {
+		height: 50%;
+		width: 50%;
+	}
+	
+	#skills {
+		margin: 2% 2% 5%;
+	}
+	
+	.resume {
+		margin: auto auto 3%;
+	}
 }
 
-.skillsq img {
-	max-height: 70px;
-	max-width: 70px;
-	padding: 2px;
-	margin: 0 auto;
-	/*float: left;*/
+@media screen and (max-width:590px) {
+	.logo {
+		display: none;	
+	}
+
+	.navlinks {
+		display: none;
+	}
+	
+
+	#more {
+		float: right;
+		display: inline-block;
+	}
+	
+	
+	#djbody {
+		overflow: auto;
+	}
+	
+	#djpic {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.description {
+		width: 100%;
+	}
 }
 
-/*.skillcap {
-	float: left;
-	text-align: left;
-}*/
+@media screen and (max-width:480px) {
+	.sqpic {
+		height: 100%;
+		width: 100%;
+	}
+	
+	#skills {
+		margin: 2% 2% 8%;
+	}
+	
+	.resume {
+		margin: auto auto 5%;
+	}
+}

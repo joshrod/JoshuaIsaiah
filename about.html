@@ -1,82 +1,88 @@
 <!DOCTYPE html>
 	<html id="abouthtml">
 		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>About</title>
+			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 			<link href="custom.css" rel="stylesheet" type="text/css" />
-			<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600,700,400' rel='stylesheet' type='text/css'>
 			<link href='https://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
-			<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700|Overlock+SC' rel='stylesheet' type='text/css'>
-			<link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 		</head>
 		<body id="aboutbody">
-			<div class="navbar">
+			<div class="navbar" id="navigation">
 				<div class="logo">
-					<img src="JR Logo.png" />
+					<img id="JR" src="JR-Logo.png" />
 				</div>
 				<div id="name">
 					<h1>Joshua Isaiah Rodriguez</h1>
 				</div>
 				<nav>
-					<a href="index.html" class="navlinks" title="Just Hold On, We're Going">Home</a>
-					<a href="projects.html" class="navlinks" title="From The">Projects</a>
-					<a href="dj.html" class="navlinks" title="Now That's My">DJ</a>
-					<a href="#" class="active navlinks" title="What We Talkin'">About</a>
-				<nav>
+					<a href="/" class="navlinks" title="Just Hold On, We're Going">Home</a>
+					<a href="/projects" class="navlinks" title="From The">Projects</a>
+					<a href="/dj" class="navlinks" title="Now That's My">DJ</a>
+					<a href="javascript:;" class="active navlinks" title="What We Talkin'">About</a>
+					<a id="more" href="javascript:;">&#9776;</a>
+				</nav>
+			</div>
+			<div id="responsive">
+				<div class="rnav">
+					<a href="/" class="navlinks" title="Just Hold On, We're Going">Home</a>
+				</div>
+				<div class="rnav">
+					<a href="/projects" title="From The">Projects</a>
+				</div>
+				<div class="rnav">
+					<a href="/dj" title="Now That's My">DJ</a>
+				</div>
 			</div>
 			<div class="about">
-				<div class="textwrap">
+				<div id="profile">
+					<img src="profilepic2.png" alt="JoshProfile" >
+				</div>
+				<div id="aboutwrap">
 					<p>University of Wisconsin-Madison alumnus. Born and raised in San Antonio, Texas. Focused on Graphic Design, Web Design, and Mobile Development. In my spare time I listen to and mix music, watch superhero movies, and mess with electronics.</p>
 				</div>
+				<div id="caption">
+					<p>Things I'm Pretty Good At:</p>
+				</div>
+				<div id="skills">
+					<div class="topskills">
+						<div class="iconwrap">
+							<img class="icon" src="aitile3.png" alt="Illustrator" >
+						</div>
+						<div class="iconwrap">
+							<img class="icon" src="pstile3.png" alt="Photoshop" >
+						</div>
+						<div class="iconwrap">
+							<img class="icon" src="prtile3.png" alt="Premiere" >
+						</div>
+						<div class="iconwrap">
+							<img class="icon" src="droidtile1.png" alt="Android Studio" >
+						</div>
+						<div class="iconwrap">
+							<img class="icon" src="html1.png" alt="HTML/CSS" >
+						</div>
+					</div>
+				</div>
 				<div class="resume">
-					<a id="resumelink" href="Joshua Rodriguez Resume.docx" target="_blank">Download Joshua Rodriguez's Resume</a>
+					<a id="resumelink" href="Joshua Rodriguez GD Resume.docx" target="_blank">Download Resume</a>
 				</div>
 				<div class="aboutlinks">
-					<a href="http://www.facebook.com/joshrodriguez17" target="_blank">
+					<a href="http://www.facebook.com/joshrodriguez17" target="_blank" title="Facebook">
 						<img src="facebook.png" alt="Facebook" >
 					</a>
-					<a href="mailto:josh@joshuaisaiah.com" >
-						<img src="mailsq.png" alt="Email" >
+					<a href="mailto:josh@joshuaisaiah.com" title="Email Josh">
+						<img src="mailsq1.png" alt="Email" >
 					</a>
-					<a href="https://www.linkedin.com/in/joshua-rodriguez-aa8aa7121" target="_blank">
+					<a href="https://www.linkedin.com/in/joshua-rodriguez-aa8aa7121" target="_blank" title="LinkdIn">
 						<img src="linked.png" alt="LinkedIn" >
 					</a>
-					<a href="https://github.com/joshrod" target="_blank">
+					<a href="https://github.com/joshrod" target="_blank" title="GitHub">
 						<img src="gitsq.png" alt="GitHub" >
 					</a>
 				</div>
 			</div>
-			<div class="skills">
-				<h4 id="skillsheader">Skills</h4>
-				<div class="skillsq">
-					<div class="tilewrap">
-						<img src="pstile.png" alt="Photoshop" >
-						<!--<p class="skillcap">Photoshop</p> -->
-					</div>
-					<div class="tilewrap">
-						<img src="aitile.png" alt="Illustrator" >
-						<!--<p class="skillcap">Illustrator</p>-->
-					</div>
-					<div class="tilewrap">
-						<img src="prtile.png" alt="Premiere" >
-						<!--<p class="skillcap">Premiere</p>-->
-					</div>
-					<div class="tilewrap">
-						<img src="droidtile.png" alt="Android Studio" >
-						<!--<p class="skillcap">Android Studio</p>-->
-					</div>
-					<div class="tilewrap">
-						<img src="javatile.png" alt="Java Programming" >
-						<!--<p class="skillcap">Java Programming</p>-->
-					</div>
-					<div class="tilewrap">
-						<img src="htmltile.png" alt="HTML/CSS" >
-						<!--<p class="skillcap">HTML/CSS</p>-->
-					</div>
-					<div class="tilewrap">
-						<img src="jstile.png" alt="JavaScript/jQuery" >
-						<!--<p class="skillcap">JavaScript/jQuery</p>-->
-					</div>
-				</div>
-			</div>
+			<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+			<script src="script.js"></script>
 		</body>
 	</html>

@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 	<html id="djhtml">
 		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>DJ JoshRod</title>
+			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 			<link href="custom.css" rel="stylesheet" type="text/css" />
 			<link href='https://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
 			<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600,700,400' rel='stylesheet' type='text/css'>		
 		</head>
 		<body id="djbody">
-			<div class="navbar">
+			<div class="navbar" id="navigation">
 				<div class="logo">
-					<img src="JR Logo.png" />
+					<img id="JR" src="JR-Logo.png" />
 				</div>
 				<div id="name">
 					<h1>Joshua Isaiah Rodriguez</h1>
 				</div>
 				<nav>
-					<a href="index.html" class="navlinks" title="Just Hold On, We're Going">Home</a>
-					<a href="projects.html" class="navlinks" title="From The">Projects</a>
-					<a href="#" class="active navlinks" title="Now That's My">DJ</a>
-					<a href="about.html" class="navlinks" title="What We Talkin'">About</a>
-				<nav>
+					<a href="/" class="navlinks" title="Just Hold On, We're Going">Home</a>
+					<a href="/projects" class="navlinks" title="From The">Projects</a>
+					<a href="javascript:;" class="active navlinks" title="Now That's My">DJ</a>
+					<a href="/about" class="navlinks" title="What We Talkin'">About</a>
+					<a id="more" href="javascript:;">&#9776;</a>
+				</nav>
+			</div>
+			<div id="responsive">
+				<div class="rnav">
+					<a href="/" class="navlinks" title="Just Hold On, We're Going">Home</a>
+				</div>
+				<div class="rnav">
+					<a href="/projects" title="From The">Projects</a>
+				</div>
+				<div class="rnav">
+					<a href="/about" title="What We Talkin'">About</a>
+				</div>
 			</div>
 			<div id="djpic"></div>
 			<div class="description">
 				<div class="bv_about">
-					<div class="textwrap">
-						<h3 class="djheader">BLUE VELVET LOUNGE</h3>
-						<h4>Badger Latin Nights</h4>
-						<p>Reggaeton, Salsa, Merengue, Bachata, & More</p>
-						<p>Every Thursday @ 10pm</p>
-						<p>430 W Gilman St, Madison, WI 53703</p>
-					</div>
+					<h3 class="djheader">BLUE VELVET LOUNGE</h3>
+					<h4>Badger Latin Nights</h4>
+					<p>Reggaeton, Salsa, Merengue, Bachata, & More</p>
+					<p>Thursdays @ 10pm</p>
+					<p>430 W Gilman St, Madison, WI 53703</p>
+					<p>Find us on <a href="https://www.facebook.com/BVLatinNight/" target="_blank">Facebook</a>.</p>
 				</div>
 				<div class="clv_about">
-					<div class="textwrap">
-						<h3 class="djheader">C'EST LA VIE WEDDING SERVICES</h3>
-						<h4>DJ, Uplighting, Dancing on a Cloud, & Photo Booth</h4>
-						<p>Find out more about our services <a href="http://www.clvevents.com" target="_blank">here</a>.</p>
-						<p>Wedding questions? Send me an <a href="mailto:joshr.clv@gmail.com">email</a>.</p>
-					</div>
+					<h3 class="djheader">C'EST LA VIE WEDDING SERVICES</h3>
+					<h4>DJ, Uplighting, Dancing on a Cloud, & Photo Booth</h4>
+					<p>Based in Madison, WI</p>
+					<p>Find out more about their services <a href="http://www.clvevents.com" target="_blank">here</a>.</p>
 				</div>
 				<div class="other_gigs">
-					<div class="textwrap">
-						<h3 class="djheader">OTHER NOTABLE GIGS</h3>
-						<p>CYC - Latin Theme Live DJ</p>
-						<p>The Hub - Grand Pool Opening</p>
-						<p>Church Key - New Year's Eve</p>
-						<p>State Street Brats - Saturday Night</p>
-					</div>
+					<h3 class="djheader">OTHER NOTABLE GIGS</h3>
+					<p>CYC - Latin Theme Live DJ</p>
+					<p>The Hub - Grand Pool Opening</p>
+					<p>Church Key - New Year's Eve</p>
+					<p>State Street Brats - Saturday Night</p>
 				</div>
 			</div>
+			<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+			<script src="script.js"></script>
 		</body>
 	</html>

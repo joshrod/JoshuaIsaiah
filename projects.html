@@ -1,50 +1,114 @@
 <!DOCTYPE html>
-	<html>
+	<html id="projecthtml">
 		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>Projects</title>
+			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+			<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 			<link type="text/css" rel="stylesheet" href="custom.css" />
 			<link href='https://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
 		</head>
 		<body id="projectbody">
-			<div class="navbar">
+			<div class="navbar" id="navigation">
 				<div class="logo">
-					<img src="JR Logo.png" />
+					<img id="JR" src="JR-Logo.png" />
 				</div>
 				<div id="name">
 					<h1>Joshua Isaiah Rodriguez</h1>
 				</div>
 				<nav>
-					<a href="index.html" class="navlinks" title="Just Hold On, We're Going">Home</a>
-					<a href="#" class="active navlinks" title="From The">Projects</a>
-					<a href="dj.html" class="navlinks" title="Now That's My">DJ</a>
-					<a href="about.html" class="navlinks" title="What We Talkin'">About</a>
-				<nav>
+					<a href="/" class="navlinks" title="Just Hold On, We're Going">Home</a>
+					<a href="javascript:;" class="active navlinks" title="From The">Projects</a>
+					<a href="/dj" class="navlinks" title="Now That's My">DJ</a>
+					<a href="/about" class="navlinks" title="What We Talkin'">About</a>
+					<a id="more" href="javascript:;">&#9776;</a>
+				</nav>
+			</div>
+			<div id="responsive">
+				<div class="rnav">
+					<a href="/" class="navlinks" title="Just Hold On, We're Going">Home</a>
+				</div>
+				<div class="rnav">
+					<a href="/dj" title="Now That's My">DJ</a>
+				</div>
+				<div class="rnav">
+					<a href="/about" title="What We Talkin'">About</a>
+				</div>
 			</div>
 			<div class="squares">
-				<a href="Supermercado Latino.png" >
-					<img src="Supermercado.png" alt="Supermercado Latino">
-				</a>
-				<a href="Dia de los Muertos Flyer.png" >
-					<img src="DDLM.png" alt="Dia de los Muertos">
-				</a>
-				<a href="Founders' Week.png" >
-					<img src="Week.png" alt="Founders' Week">
-				</a>
-				<a href="Taboo.png" >
-					<img src="taboosquare.png" alt="Taboo">
-				</a>
-				<a href="Minimal CYC.png" >
-					<img src="CYC.png" alt="Cyc">
-				</a>
-				<a href="Mu Line.png" >
-					<img src="Mu.png" alt="Mu Line">
-				</a>
-				<a href="BV Flyer.png" >
-					<img src="BV Square.png" alt="Blue Velvet">
-				</a>
-				<a href="https://play.google.com/store/apps/details?id=joshrod.com.madisondrinks" target="_blank">
-					<img src="HiResMD1.png" alt="MadisonDrinks">
-				</a>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="Supermercado Latino.png" >
+						<img  class="sqpic" src="SuperMercado.png" alt="Supermercado Latino" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="Dia de Los Muertos Flyer.png" >
+						<img class="sqpic" src="DDLM.png" alt="Dia de los Muertos" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="Founders' Week.png" >
+						<img class="sqpic" src="Week.png" alt="Founders' Week" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="Taboo.png" >
+						<img class="sqpic" src="taboosquare.png" alt="Taboo" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="Minimal CYC.png" >
+						<img class="sqpic" src="CYC.png" alt="Cyc" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="Mu Line.png" >
+						<img class="sqpic" src="Mu.png" alt="Mu Line" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="BV Flyer.png" >
+						<img class="sqpic" src="BV Square.png" alt="Blue Velvet" >
+					</a>
+				</div>
+				<div class="square">
+					<a href="https://play.google.com/store/apps/details?id=joshrod.com.madisondrinks" target="_blank">
+						<img class="sqpic" src="HiResMD1.png" alt="MadisonDrinks" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="LN2Full.png" >
+						<img class="sqpic" src="LN2.png" alt="Latin Night Filter #1" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="911Flyer.png" >
+						<img class="sqpic" src="911FlyerTile.png" alt="911 Flyer" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="LN4Full.png" >
+						<img class="sqpic" src="LN4.png" alt="Latin Night Filter #2" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="EncendidoWeb.png" >
+						<img class="sqpic" src="EncendidoTile.png" alt="Encendido" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="LN6Full.png" >
+						<img class="sqpic" src="LN6.png" alt="Latin Night Filter #3" >
+					</a>
+				</div>
+				<div class="square">
+					<a class="fancybox" rel="gallery1" href="SAFilter.png" >
+						<img class="sqpic" src="SAFThumb.png" alt="San Antonio Filter" >
+					</a>
+				</div>
 			</div>
+			<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+			<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+			<script src="script.js"></script>
 		</body>
 	</html>
