@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+			<title>Contact | Joshua Isaiah Rodriguez</title>
+			<meta name="description" content="Joshua Isaiah Rodriguez is a front-end web developer, graphic designer, and aspiring mobile app developer currently based in San Antonio, Texas.">
+			<meta name="author" content="Joshua Isaiah Rodriguez">
+			<meta name="viewport" content="width=device-width; initial-scale=1.0">
+			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+			<link type="text/css" rel="stylesheet" href="custom.css" />
+			<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		</head>
+		<body>
+			<div class="navbar" id="navigation">
+				<div class="logo">
+					<img id="JR" src="JR-Logo.png" />
+				</div>
+				<div id="navname">
+					<h1>Joshua Isaiah Rodriguez</h1>
+				</div>
+				<nav>
+					<a href="index.html" class="navlinks" title="What We Talkin'">About</a>
+					<a href="projects.html" class="navlinks" title="From The">Projects</a>
+					<a href="javascript:;" class="active navlinks" title="Point Of">Contact</a>
+					<a id="more" href="javascript:;">&#9776;</a>
+				</nav>
+			</div>
+			<div id="responsive">
+				<div class="rnav">
+					<a href="index.html" title="What We Talkin'">About</a>
+				</div>
+				<div class="rnav">
+					<a href="projects.html" title="From The">Projects</a>
+				</div>
+			</div>
+			<div id="contact">
+				<div class="sectionheader">
+					<h1>Contact</h1>
+					<p>"You want to team up? Nice!"</p>
+				</div>
+				<div id="contactcontent">
+					<div id="formwrap">
+	  					<div id="form-messages"></div>
+						<form id="contactform" method="post" action="mailer.php">
+							<div class="field">
+								<label for="name">Name:</label>
+								<input type="text" id="name" name="name" required>
+							</div>
+							<div class="field">
+								<label for="email">Email:</label>
+								<input type="email" id="email" name="email" required>
+							</div>
+							<div class="field">
+								<label for="message">Message:</label>
+								<textarea id="message" name="message" required></textarea>
+							</div>
+							<div class="field">
+								<button type="submit">Send</button>
+							</div>
+						</form>
+					</div>
+					<div id="social">
+						<div class="socialwrap">
+							<p>Colorin Colorado, este sitio se ha acabado.</p>
+							<div id="socialicons">
+								<a href="https://www.facebook.com/joshrodriguez17" target="_blank">
+									<img id="facebook" src="facebookiconright.png" />
+								</a>
+								<a href="https://www.linkedin.com/in/joshua-rodriguez-aa8aa7121" target="_blank" >
+									<img src="linkedinlogo.png" />
+								</a>
+							</div>
+						<div id="middlesocial" class="socialwrap">
+							<p>For the more technical things, visit my GitHub Profile:
+							<div id="githubwrap">
+								<a href="https://github.com/joshrod" target="_blank">
+									<img src="githubicon.png" />
+								</a>
+							</div>
+						</div>
+						<div class="socialwrap">
+							<p>And if you hate using contact forms to email people:
+							<div id="mailwrap">
+								<a href="mailto:joshrodriguez17@gmail.com" >
+									<img src="emailicon.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="script.js"></script>
+		</body>
+	</html>
