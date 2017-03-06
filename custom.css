@@ -65,6 +65,8 @@ nav a {
 	margin: 0;
 	text-align: center;
 	display: none;
+	-webkit-transition: border-bottom .15s;
+	transition: border-bottom .15s;
 }
 
 #more {
@@ -82,6 +84,8 @@ nav a:visited {
 
 nav a:hover {
 	color: #666666;
+	border-bottom: 4px solid #8A0707;
+	padding-bottom: 1.3rem;
 }
 
 .active {
