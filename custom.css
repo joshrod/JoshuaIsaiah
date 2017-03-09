@@ -22,7 +22,7 @@ body {
 /*------------------------- Navigation Bar ------------------------------------*/
 
 .navbar {
-	background-color: #FCFCFC;
+	background-color: white;
 	overflow: hidden;
 	height: 6rem;
 	width: 100%;
@@ -74,6 +74,10 @@ nav a {
 	display: block;
 }
 
+#more:hover {
+	border-bottom: none;
+}
+
 nav a:link {
 	color: black;
 }
@@ -105,10 +109,10 @@ nav a:hover {
 }
 
 .rnav {
-	background-color: #FCFCFC;
+	background-color: white;
 	overflow: hidden;
 	height: 6rem;
-	border-top: .1rem solid #f2f2f2;
+	border-bottom: .1rem solid #f2f2f2;
 	text-align: left;
 }
 
@@ -204,6 +208,8 @@ nav a:hover {
 
 #about {
 	background-color: #efefef;
+	box-shadow: inset  0  8px 8px -8px rgba(0, 0, 0, .7), 
+                    inset  0 -8px 8px -8px rgba(0, 0, 0, .2);
 }
 
 #aboutcontent {
@@ -241,7 +247,7 @@ nav a:hover {
 #services {
 	width: 100%;
 	margin: 0;
-	background-color: #f8f8f8;
+	background-color: white;
 }
 
 .sectionheader {
@@ -305,7 +311,7 @@ nav a:hover {
 #skillswrap {
 	font-family: 'Lato', sans-serif;
 	text-align: center;
-	background-color: #f9f9f9;
+	background-color: white;
 	padding: 0 0 3rem;
 }
 
@@ -873,8 +879,5 @@ button {
 		left: 20%;
 	}
 }
-
-
-
 
 
