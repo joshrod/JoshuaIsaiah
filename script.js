@@ -51,13 +51,6 @@ $(function() {
 });
 
 $(document).ready(function() {
-	$(".fancybox").fancybox( {
-		openEffect	: 'none',
-		closeEffect	: 'none',
-	});
-});
-
-$(document).ready(function() {
 	$('#more').click(function() {
 		$('#responsive').slideToggle("fast");
 	});
@@ -67,6 +60,8 @@ $(document).ready(function() {
 			$('#responsive').hide();
 		}
 	});
+
+	$(".fancybox").fancybox();
 
 	$('#darrow').smoothScroll();
 
