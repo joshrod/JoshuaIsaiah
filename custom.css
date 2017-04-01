@@ -477,7 +477,7 @@ nav a:hover {
 	font-size: 1.4rem;
 }
 
-/*-------------------------------- Blue Velvet Page --------------------------------*/
+/*-------------------------------- Process Pages --------------------------------*/
 
 .processwrapper {
 	width: 90%;
@@ -488,23 +488,12 @@ nav a:hover {
 	font-weight: 300;
 }
 
-#firstfloor {
-	margin: 2rem auto 4rem;
+.topheader {
+	margin: 3rem auto;
 }
 
-#firstfloor img {
-	width: 100%;
-	height: auto;
-}
-
-#bvlogodesign {
+.processpicwrap {
 	margin: 4rem auto;
-	width: 100%;
-}
-
-#bvlogodesign img {
-	width: 100%;
-	height: auto;
 }
 
 .smallerheader h3 {
@@ -520,24 +509,79 @@ nav a:hover {
 	font-weight: 300;
 }
 
-#bvwebdesign {
-	margin: 4rem auto;
-}
-
-#bvwebdesign img {
+.processpicwrap img {
 	width: 100%;
 	height: auto;
 }
 
-#bvwebmock {
+/*-------------------------------- Blue Velvet Page --------------------------------*/
+
+#bvcolorwrapper {
 	margin: 4rem auto;
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+
+.bvcolors {
+	width: 20%;
+	height: 5rem;
+	display: inline-block;
+	float: left;
+}
+
+#black {
+	background: black;
+}
+
+#blue {
+	background: #000066;
+}
+
+#red {
+	background: #660000;
+}
+
+#gray {
+	background: #888;
+}
+
+#white {
+	background: #fff;
 }
 
 #bvwebmock img {
-	width: 100%;
-	height: auto;
+	border: 1px solid #ddd;
 }
 
+/*-------------------------------- Gamma Theta Page --------------------------------*/
+
+#lambdalogodesign {
+	text-align: center;
+}
+
+#nationallogo {
+	width: 70%;
+	margin-bottom: 4rem;
+}
+
+#chapterlogo {
+	width: 70%;
+}
+
+#lambdafrontpage, #lambdawebmock img {
+	border: 1px solid #ddd;
+	padding: 1rem;
+}
+
+#lambdawebmock img {
+	margin-top: -5px;
+}
+
+#lambdalink {
+	margin: 2rem auto;
+	text-align: center;
+	font-size: 2rem;
+}
 
 /*-------------------------- Contact Styling ------------------------------ */
 
@@ -635,6 +679,10 @@ button {
 @media screen and (min-width:400px) {
 	.processwrapper p {
 		font-size: 1.6rem;
+	}
+
+	.bvcolors {
+		height: 7rem;
 	}
 
 	#bvwebmock {
@@ -738,6 +786,10 @@ button {
 		width: 27.25%;
 	}
 
+	.bvcolors {
+		height: 9rem;
+	}
+
 	#formwrap {
 		width: 85%;
 	}
@@ -813,12 +865,16 @@ button {
 		font-size: 2.6rem;
 	}
 
-	#firstfloor {
-		margin-bottom: 6rem;
+	.processpicwrap {
+		margin: 6rem auto;
 	}
 
-	#bvlogodesign, #bvwebdesign, #bvwebmock {
-		margin: 6rem auto;
+	.bvcolors {
+		height: 11rem;
+	}
+
+	#lambdalink {
+		font-size: 2.4rem;
 	}
 	
 	#skills {
@@ -889,17 +945,16 @@ button {
 		margin-bottom: 8rem;
 	}
 
-	#firstfloor, #bvlogodesign, #bvwebdesign, #bvwebmock {
+	.processpicwrap {
 		width: 90%;
 	}
 
-	#firstfloor {
-		margin-top: 4rem;
-		margin-bottom: 8rem;
+	.topheader, .processpicwrap {
+		margin: 8rem auto;
 	}
 
-	#bvlogodesign, #bvwebdesign, #bvwebmock {
-		margin: 8rem auto;
+	.bvcolors {
+		height: 13rem;		
 	}
 
 	#formwrap {
@@ -976,6 +1031,10 @@ button {
 	.square {
 		height: 25%;
 		width: 25%;
+	}
+
+	.bvcolors {
+		height: 15rem;
 	}
 
 	#formwrap {
