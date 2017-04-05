@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+			<title>MadisonDrinks | Joshua Isaiah Rodriguez</title>
+			<meta name="description" content="Joshua Isaiah Rodriguez is a web developer, graphic designer, and aspiring full-stack developer currently based in San Antonio, Texas. This is an overview of an informative Android application for drink specials in downtown Madison, Wisconsin.">
+			<meta name="author" content="Joshua Isaiah Rodriguez">
+			<meta name="viewport" content="width=device-width; initial-scale=1.0">
+			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+			<link type="text/css" rel="stylesheet" href="custom.css" />
+			<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+		</head>
+		<body id="indexbody">
+			<div class="navbar" id="navigation">
+				<div class="logo">
+					<img id="JR" src="JR-Logo.png" />
+				</div>
+				<div id="navname">
+					<h1>Joshua Isaiah Rodriguez</h1>
+				</div>
+				<nav>
+					<a href="/" class="navlinks" title="What We Talkin'">About</a>
+					<a href="/projects" class="active navlinks" title="From The">Projects</a>
+					<a href="/contact" class="navlinks" title="Point Of">Contact</a>
+					<a id="more" href="javascript:;">&#9776;</a>
+				</nav>
+			</div>
+			<div id="responsive">
+				<div class="rnav">
+					<a href="/projects" title="From The">Projects</a>
+				</div>
+				<div class="rnav">
+					<a href="/contact" title="Point Of">Contact</a>
+				</div>
+			</div>
+			<div class="processwrapper">
+				<div class="sectionheader">
+					<h1>MadisonDrinks</h1>
+					<p>Mobile Development / UI Design</p>
+				</div>
+				<div class="smallerheader topheader">
+					<p>While trying to find my way in Madison after university, a group of friends and I that were still in town would get together at pubs and bars downtown on some days after work. We didn't have funds to carelessly spend, so we would seek out the cheapest places depending on the day we were available. This is where the idea for an application that would inform the user of the places where they could save money that day started.</p>
+				</div>
+				<div class="processpicwrap">
+					<img src="Feature Graphic No Motto.png" alt="MadisonDrinks Feature Graphic" >
+				</div>
+				<div class="smallerheader">
+					<h3>Research and Development</h3>
+					<p>With prior programming knowledge in Java from university, I began to learn how the Android Operating System worked at a deeper level. I learned about how activities, fragments, views, and Android XML files worked together to provide a functional application. The entire project was a challenge. Applying Java in different ways than I was accustomed to fried my brain many times.<br><br>
+					I decided to focus on functionality rather than design for this project. What's the point of something looking great if its main purpose is to work properly?<br><br>
+					I envisioned an application that was easy and intuitive to use. I wanted it to open up to the current day and display a list of the bars in downtown Madison. Tapping on the bar's name revealed its current drink specials as well as have the ability to open Google Maps to show the bar's location. With one swipe left or right, the day would change depending on the direction.<br><br>
+					I used a Title Strip of the days of the week up at the top that would switch fragments in the activity when the user swiped the screen or touched the strip. The list of bars itself is an Expandable List View, comprised of a HashMap that used Strings as "keys", and a List of Strings as its "value."</p>
+				</div>
+				<div id="mdscreenwrap" class="processpicwrap">
+					<img id="mdscreen1" src="mdscreen1.png" alt="MadisonDrinks Screen 1" >
+					<img id="mdscreen2" src="mdscreen2.png" alt="MadisonDrinks Screen 2" >
+					<img id="mdscreen3" src="mdscreen3.png" alt="MadisonDrinks Screen 3" >
+				</div>
+				<div class="smallerheader">
+					<h3>On The Shelf...For Now</h3>
+					<p>This project is currently an excellent starting point. I know it could look a lot better, but the important thing to note is that it works as intended. Eventually, I want to go back, optimize the code, and fix the application design. I can even see myself reworking this app to fit other cities as I continue learning.<br><br>
+					My aspirations, however, cannot be fulfilled at the moment. During the application's development, I used my significant other's laptop rather than my current 2008 Macbook, and I didn't want to keep taking it while she was working on graduating university herself. While I was using the Android API for Eclipse, I found it much easier to use Android Studio, a program that my old Macbook cannot support.<br><br>
+					The code for the application can be found on my GitHub profile, and the application itself can be found on the Google Play Store for your viewing pleasure.</p>
+				</div>
+				<div class="mdlink">
+					<a href="https://github.com/joshrod/MadisonDrinks" target="_blank">MadisonDrinks GitHub Repository</a>
+				</div>
+				<div class="mdlink">
+					<a href="https://play.google.com/store/apps/details?id=joshrod.com.madisondrinks" target="_blank">MadisonDrinks on the Play Store</a>
+				</div>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="jquery-3.1.1.min.js"></script>
+			<script src="smoothscroll.js"></script>
+			<script src="script.js"></script>
+		</body>
+	</html>

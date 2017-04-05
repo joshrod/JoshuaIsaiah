@@ -583,6 +583,51 @@ nav a:hover {
 	font-size: 2rem;
 }
 
+/*-------------------------------- Supermercado / Cyc Page --------------------------------*/
+
+#smflyer, #cycflyer {
+	width: 50%;
+	margin-right: 2%;
+	float: left;
+}
+
+ #smcover, #sminsta, #cycbanner, #cycinsta {
+ 	width: 47%;
+ }
+
+#cycflyer, #cycbanner, #cycinsta {
+	border: 1px solid #ddd;
+}
+
+/*-------------------------------- Latin Night / San Antonio Page --------------------------------*/
+
+#lnfilter, #safilter {
+	margin-bottom: 4rem;
+}
+
+/*-------------------------------- MadisonDrinks Page --------------------------------*/
+
+#mdscreenwrap {
+	overflow: hidden;
+}
+
+#mdscreen1, #mdscreen2, #mdscreen3 {
+	width: 32%;
+	float: left;
+}
+
+#mdscreen2 {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.mdlink {
+	margin: 2rem auto;
+	font-size: 1.6rem;
+	font-weight: 400;
+	text-align: center;
+}
+
 /*-------------------------- Contact Styling ------------------------------ */
 
 #contact {
@@ -687,6 +732,10 @@ button {
 
 	#bvwebmock {
 		width: 95%;
+	}
+
+	.mdlink {
+		font-size: 1.8rem;
 	}
 }
 
@@ -874,6 +923,11 @@ button {
 	}
 
 	#lambdalink {
+		font-size: 2.4rem;
+	}
+
+	.mdlink {
+		margin: 4rem auto;
 		font-size: 2.4rem;
 	}
 	
