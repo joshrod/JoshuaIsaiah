@@ -1,3 +1,6 @@
+/*********************************************************************************
+								GLOBAL STYLING
+*********************************************************************************/
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -6,25 +9,29 @@
 
 html {
 	font-size: 62.5%;
+	padding: 0;
 }
 
 html, body {
 	height: 100%;
 	width: 100%;
-	padding: 0px;
 	margin: 0px;
 }
 
 body {
+	min-height: 100%;
 	font-size: 1.6rem;
+	background-color: #efefef;
 }
 
-/*------------------------- Navigation Bar ------------------------------------*/
+/*********************************************************************************
+								NAVIGATION BAR
+*********************************************************************************/
 
 .navbar {
-	background-color: white;
+	background-color: black;
 	overflow: hidden;
-	height: 6rem;
+	height: 5rem;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -34,124 +41,117 @@ body {
 	z-index: 5;
 }
 
-.logo img {
-	width: 4.5rem;
-	height: 4.5rem;
-	margin: .8rem .4rem .4rem;
-	float: left;
-	display: none;
+#navwrap {
+	width: 100%;
+	max-width: 1440px;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
 }
 
 #navname {
-	margin-left: 3%;
-	margin-right: 3%;
-	float: left;
-	padding: 0rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(,-50%, -50%);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	white-space: nowrap;
 }
 
 #navname h1 {
-	font-family: 'Pacifico', cursive;
-	font-size: 2rem;
-	font-weight: 400;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: white;
+	margin: 0;
+	padding: 0;
 }
 
 nav a {
-	float: left;
-	display: inline-block;
-	text-decoration: none;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.6rem;
-	padding: 2.4rem 1.4rem;
-	margin: 0;
-	text-align: center;
 	display: none;
 }
 
 #more {
-	float: right;
+	height: 100%;
+	padding: 1.4rem 1.2rem;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: white;
 	display: block;
+	text-decoration: none;
 }
 
-#more:hover {
-	border-bottom: none;
-}
-
-nav a:link {
-	color: black;
-}
-
-nav a:visited {
-	color: black;
-}
-
-nav a:hover {
+/*nav a:hover {
 	color: #8a0707;
 	border-bottom: 4px solid #8A0707;
 	padding-bottom: 1.3rem;
 	-webkit-transition: padding-bottom .15s;
 	transition: padding-bottom .15s;
 }
+*/
 
-.active {
-	border-bottom: 4px solid #8a0707;
-	padding-bottom: 1.3rem;
+.active, nav a:hover {
+	color: white;
 }
 
-/*------------------------------- Responsive Navigation --------------------*/
+/*********************************************************************************
+								MOBILE NAVBAR
+*********************************************************************************/
 
 #responsive {
 	display: none;
 	position: absolute;
 	z-index: 4;
 	width: 100%;
-	margin-top: 5.8rem;
+	padding-top: 5rem;
 	
 }
 
 .rnav {
-	background-color: white;
+	background-color: #222;
 	overflow: hidden;
-	height: 6rem;
-	border-bottom: .1rem solid #f2f2f2;
-	text-align: left;
+	height: 5rem;
+	margin: 0;
+	text-align: center;
 }
 
 .rnav a {
 	text-decoration: none;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.8rem;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.3rem;
 	display: inline-block;
 	width: 100%;
 	height: 100%;
-	padding: 1.8rem;
+	padding: 1.4rem;
+	font-weight: 800;
+	color: #ccc;
 }
 
-.last {
-	border-bottom: .1rem solid #9e9e9e;
+.rnav .ractive, .rnav a:hover {
+	color: white;
 }
 
-.rnav a:link {
-	color: #000000;
-}
+/*********************************************************************************
+								FRONT PAGE
+*********************************************************************************/
 
-.rnav a:visited {
-	color: #000000;
-}
-
-.rnav a:hover {
-	color: #666666;
-}
-
-/*------------------------------- Main Page ----------------------------*/
-
-#main_pic {
-	background: url("mainpic.png");
+#mainpic {
+	background: url("JoshRod2.png");
 	background-repeat: no-repeat;
-	background-position: center top;
-	background-attachment: fixed;
+	background-position: center bottom;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
+	height: 50rem;
+	box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
 }
 
 #hellodiv {
@@ -162,7 +162,7 @@ nav a:hover {
 }
 
 #hellowrap {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	text-align: center;
 	color: white;
 	position: absolute;
@@ -170,20 +170,18 @@ nav a:hover {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 #hellodiv h1 {
 	margin: 0;
-	padding-top: 1rem;
-	font-weight: 300;
+	font-weight: 600;
 }
 
 #hellodiv p {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	padding: 0 1.5rem;
 	line-height: 1.3;
 }
 
@@ -206,301 +204,464 @@ nav a:hover {
 	text-decoration: none;
 }
 
-#about {
-	background-color: #efefef;
-	box-shadow: inset  0  8px 8px -8px rgba(0, 0, 0, .7), 
-                    inset  0 -8px 8px -8px rgba(0, 0, 0, .2);
-}
+/*********************************** QUOTE ****************************************/
 
-#aboutcontent {
-	padding: 0 0 3rem;
-}
-
-#picwrap {
+#quote {
 	width: 100%;
-	margin: 3rem auto;
-	text-align: center;
+	margin: 1rem auto;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	background-color: white;
+	overflow: hidden;
+	box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
 }
 
-#picwrap img {
+#quotewrap {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+#quotetext {
+	font-size: 2.4rem;
+	margin: 0 auto;
+	padding: 2rem;
+	font-style: italic;
+}
+
+#credit {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	font-size: 2.4rem;
+	color: black;
+	font-style: normal;
+}
+
+/*********************************** FEATURES ****************************************/
+
+#sitefeatures {
+	width: 100%;
+	margin: 1rem auto;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	background-color: white;
+	overflow: hidden;
+	box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+}
+
+#featureswrap {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-bottom: 5rem;
+	overflow: hidden;
+}
+
+.feature {
+	width: 100%;
+	padding: 1rem;
+}
+
+.featureheader h3 {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+	color: black;
+}
+
+.featurepicwrap {
+	width: 100%;
+}
+
+.featurepicwrap img {
 	width: 100%;
 	height: auto;
-	max-width: 18rem;
-	max-height: 18rem;
 }
 
-#profiletext {
-	padding: 0 2rem;
+.featuretext p {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: black;
+}
+
+.featurelink {
+	width: 100%;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.2rem;
+	border: 3px solid black;
 	text-align: center;
 }
 
-#profiletext p {
+.featurelink:hover {
+	background-color: black;
+	transition: .1s ease-in;
+}
+
+.featurelink a {
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	color: black;
+	text-decoration: none;
+	font-weight: 800;
+	display: block;
+}
+
+.featurelink a:hover {
+	color: white;
+	transition: .1s ease-in;
+}
+
+/*********************************************************************************
+								FOOTER STYLING
+*********************************************************************************/
+
+#footer {
+	width: 100%;
+	height: 5rem;
+	margin-top: -5rem;
+	clear: both;
+	background-color: black;
+	overflow: hidden;
+}
+
+#footerwrap {
+	width: 100%;
+	height: 5rem;
+	max-width: 1440px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#copyright {
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-family: 'Nunito Sans', sans-serif;
+	text-align: center;
+}
+
+#copyright p {
+	margin: 0;
+	color: white;
+	font-weight: 800;
+	font-size: 1.6rem;
+}
+
+/*********************************************************************************
+								ABOUT PAGE
+*********************************************************************************/
+
+#aboutheaderpic {
+	width: 100%;
+	height: 40rem;
+	position: relative;
+	background: url('JoshRod1BW.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+}
+
+.infosection {
+	width: 100%;
+	margin: 1rem auto;
+	background-color: white;
+	box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+}
+
+.infowrap {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 1rem;
+}
+
+.infowrap h1 {
+	margin: 1rem auto;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 800;
+	font-size: 4rem;
+}
+
+/*********************************** ABOUT ****************************************/
+
+#aboutmewrapper p {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+#aboutmepic {
+	display: none;
+}
+
+#resumelink {
+	width: 100%;
+	margin: 3rem auto;
+}
+
+/*********************************** BAR GRAPH ****************************************/
+
+#skillset {
+	padding-bottom: 5rem;
+}
+
+#bargraph {
+	margin: 2rem auto;
+}
+
+.skillsbar {
+	width: 100%;
+	height: 2.5rem;
+	margin: 3rem auto;
+	background-color: #ddd;
+	border-radius: 2rem;
+}
+
+.barfill {
+	height: 2.5rem;
+	border-radius: 2rem;
+	text-align: center;
+}
+
+.barfill p {
+	color: white;
+	position: relative;
+	top: 48%;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 1.6rem;
 }
 
-#city {
+#graphicbar {
+	width: 98%;
+	background-color: #8a0707;
+}
+
+#webbar {
+	width: 95%;
+	background-color: #128499;
+}
+
+#clientbar {
+	width: 98%;
+	background-color: #559912;
+}
+
+#javabar {
+	width: 70%;
+	background-color: #b37803;
+}
+
+/*********************************** SKILLS LIST ****************************************/
+
+#skillsdescription {
 	margin: 2rem 0;
 }
 
-#services {
-	width: 100%;
-	margin: 0;
-	background-color: white;
+
+#skillsdescription h3 {
+	margin: 0px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 2.6rem;
+	font-weight: 800;
 }
 
-.sectionheader {
+#skillsdescription ul {
+	margin: 0;
+	padding: 0 2rem;
+	list-style-type: none;
+}
+
+#skillsdescription li {
+	margin: .5rem 0;
+	padding: 0;
 	font-family: 'Lato', sans-serif;
-	text-align: center;
-}
-
-.sectionheader h1 {
-	margin: 0;
-	padding: 2rem 2rem 0;
 	font-weight: 300;
-	color: #8A0707;
+	font-size: 1.6rem;
 }
 
-.sectionheader p {
-	margin: 0;
-	font-weight: 300;
-	color: #333;
+#designlist {
+	margin: 2rem auto;
 }
 
-#servwrap {
+#devlist {
+	margin: 2rem auto;
+}
+
+/*********************************************************************************
+								 RESUME PAGE
+*********************************************************************************/
+#resumediv {
+	min-height: 100%;
+	margin: 0 auto;
+	padding-top: 5rem;
+	background-color: white;
+	overflow: hidden;
+	padding-bottom: 5rem;
+}
+
+#resumewrapper {
 	width: 100%;
-	margin: 5rem 0;
-	text-align: center;
-}
-
-.service {
-	width: 100%;
+	max-width: 840px;
 	margin: 0 auto;
 }
 
-#snapchat {
-	max-width: 10.1rem;
-}
-
-#website {
-	max-width: 23.9rem;
-}
-
-#computer {
-	max-width: 18.7rem;
-}
-
-.servimg img {
+#resumewrapper img {
 	width: 100%;
 	height: auto;
 }
 
-.service h1 {
-	margin: .5rem;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 2rem;
-	color: #70708a;
-}
-
-#middleserv {
-	margin: 5rem 0;
-}
-
-#skillswrap {
-	font-family: 'Lato', sans-serif;
-	text-align: center;
-	background-color: white;
-	padding: 0 0 3rem;
-}
-
-#skillsheader h1 {
-	margin: 0;
-	font-weight: 300;
-	color: #8A0707;
-}
-
-#skillsheader p {
-	margin: 0;
-	font-weight: 300;
-	color: #333;
-}
-
-.medium {
-	font-weight: 400;
-}
-
-#skillslist ul {
+#resumefooter {
 	width: 100%;
-	margin: 0 auto;
-	padding: 0 2.5rem;
-	list-style-type: none;
-	text-align: left;
+	height: 5rem;
+	margin-top: -5rem;
+	background-color: black;
+	clear: both;
 }
 
-#skillslist ul h3 {
-	margin: 1rem;
-	text-align: center;
-	color: #8a0707;
-	font-size: 2rem;
-	font-weight: 300;
-}
+/*********************************************************************************
+								 PROJECT PAGE
+*********************************************************************************/
 
-#skillslist li:before {
-	content: "•";
-	display: inline-block;
-	width: 1rem;
-	margin-left: 0rem;
-}
-
-.green:before {
-	color: #329932;
-}
-
-.yellow:before {
-	color: orange;
-}
-
-.red:before {
-	color: #993232;
-}
-
-#skillslist li {
-	margin: .5rem 0;
-}
-
-#skillslist li p {
-	margin: 0 0 0 0rem;
-	display: inline-block;
-	font-weight: 300;
-}
-
-
-/*-------------------------------- Project Page --------------------------------*/
-
-#projectheader {
-	max-width: 90%;
-	margin: 0 auto;
-	padding: 8rem 2rem 0;
-	text-align: center;
-}
-
-#projectheader h1 {
-	margin: 0;
-	font-family: 'Lato', sans-serif;
-	font-size: 3rem;
-	color: #8A0707;
-	font-weight: 300;
-}
-
-#projectheader p {
-	font-family: 'Lato', sans-serif;
-	margin: .5rem 0;
-	font-weight: 300;
-}
-
-#quotediv {
-	text-align: left;
-}
-
-#authordiv {
-	text-align: right;
-}
-
-.squares {
-	max-width: 85%;
-	margin: 3rem auto auto;
-}
-
-.square {
+#portfolioheaderpic {
 	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	float: left;
-	overflow: hidden;
+	height: 40rem;
 	position: relative;
+	background: url('designpicBW.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center left;
+	box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
 }
-.square:hover .sqpic {
+
+#portfoliodiv {
+	margin-bottom: 0;
+	padding: 0 1rem 5rem;
+}
+
+/********************************* CASE STUDIES **************************************/
+#casestudieswrap {
+	width: 100%;
+	margin: 1rem auto;
+	overflow: hidden;
+}
+
+.casestudy {
+	width: 100%;
+	margin: 1.5rem auto;
+	float: left;
+}
+
+.cspic {
+	width: 100%;
+	overflow: hidden;
+}
+
+.cspic img {
+	width: 100%;
+	height: auto;
+}
+
+.cspic img:hover {
 	-webkit-transform: scale(1.1); 
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-.square:hover .caption {
-	opacity: 1;
-}
-	
-.sqpic {
-	height: auto;
-	width: 100%;
-	-webkit-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
-	float: left;
 }
 
-.caption {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(51, 51, 51, 0.6);
-	opacity: 0;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	z-index: 3;
-	position: absolute;
+.casestudy h3 {
+	margin: .5rem auto;
+	padding: 0;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 2.2rem;
+	font-weight: 800;
+	line-height: 1;
+	text-transform: lowercase;
 }
 
-.captiontext {
-	font-family: 'Lato', sans-serif;
-	color: white;
-	text-align: center;
-	position: relative;
-	top: 26%;
-}
-
-.captiontext h1 {
-	font-size: 2.4rem;
-	text-transform: uppercase;
+.casestudy p {
 	margin: 0;
 	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+/*********************************** SQUARES ****************************************/
+
+.squares {
+	display: none;
 }
 
-.captiontext p {
-	margin: 5% 0;
-	padding: 0 5%;
-	font-size: 1.4rem;
+
+/*********************************************************************************
+							PROCESS PAGES GLOBALS
+*********************************************************************************/
+#processdiv {
+	width: 100%;
+	margin: 0;
+	padding: 5rem 0;
+	background-color: white;
+	overflow: hidden;
 }
 
-/*-------------------------------- Process Pages --------------------------------*/
 
 .processwrapper {
-	width: 90%;
-	max-width: 140rem;
-	margin: 0 auto 4rem;
-	padding: 6rem 0 0;
+	width: 100%;
+	padding: 0 1rem;
+	max-width: 144rem;
+	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
 
-.topheader {
-	margin: 3rem auto;
-}
-
-.processpicwrap {
+.toppic {
 	margin: 4rem auto;
 }
 
+.toppic img {
+	width: 100%;
+	height: auto;
+}
+
+.processpicwrap {
+	margin: 8rem auto 4rem;
+}
+
+.sectionheader {
+	margin: 2rem auto;
+}
+
+.sectionheader h1 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 4rem;
+	font-weight: 800;
+	line-height: 1;
+}
+
 .smallerheader h3 {
+	font-family: 'Nunito Sans', sans-serif;
 	margin: 1rem 0;
-	color: #8A0707;
-	font-weight: 300;
+	font-weight: 800;
 	font-size: 2.4rem;
+	text-transform: lowercase;
 }
 
 .smallerheader p {
@@ -514,10 +675,47 @@ nav a:hover {
 	height: auto;
 }
 
-/*-------------------------------- Blue Velvet Page --------------------------------*/
+.bottomheader {
+	margin: 4rem auto;
+}
+
+#projectnav {
+	width: 100%;
+	margin: 4rem auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#projectnav a {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.6rem;
+	color: black;
+	text-decoration: none;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.projecttext:hover {
+	text-decoration: underline;
+}
+
+#prevproject, #nextproject {
+	display: inline-block;
+}
+
+#prevproject {
+	float: left;
+}
+
+#nextproject {
+	float: right;
+}
+
+/*********************************************************************************
+								BLUE VELVET PAGE
+*********************************************************************************/
 
 #bvcolorwrapper {
-	margin: 4rem auto;
 	border: 1px solid #ddd;
 	overflow: hidden;
 }
@@ -553,23 +751,20 @@ nav a:hover {
 	border: 1px solid #ddd;
 }
 
-/*-------------------------------- Gamma Theta Page --------------------------------*/
+/*********************************************************************************
+								 GAMMA THETA PAGE
+*********************************************************************************/
 
 #lambdalogodesign {
 	text-align: center;
 }
 
 #nationallogo {
-	width: 70%;
 	margin-bottom: 4rem;
 }
 
-#chapterlogo {
-	width: 70%;
-}
-
 #lambdafrontpage, #lambdawebmock img {
-	border: 1px solid #ddd;
+	border: 1px solid #ccc;
 	padding: 1rem;
 }
 
@@ -577,13 +772,38 @@ nav a:hover {
 	margin-top: -5px;
 }
 
-#lambdalink {
-	margin: 2rem auto;
+#processlink {
+	width: 100%;
+	margin: 4rem auto;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.2rem;
+	border: 3px solid black;
 	text-align: center;
-	font-size: 2rem;
 }
 
-/*-------------------------------- Supermercado / Cyc Page --------------------------------*/
+#processlink:hover {
+	background-color: black;
+	transition: .1s ease-in;
+}
+
+#processlink a {
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	color: black;
+	text-decoration: none;
+	font-weight: 800;
+	display: block;
+}
+
+#processlink a:hover {
+	color: white;
+	transition: .1s ease-in;
+}
+
+/*********************************************************************************
+							SUPERMERCADO / CYC PAGES
+*********************************************************************************/
 
 #smflyer, #cycflyer {
 	width: 50%;
@@ -599,13 +819,17 @@ nav a:hover {
 	border: 1px solid #ddd;
 }
 
-/*-------------------------------- Latin Night / San Antonio Page --------------------------------*/
+/*********************************************************************************
+						LATIN NIGHT / SAN ANTONIO PAGES
+*********************************************************************************/
 
 #lnfilter, #safilter {
 	margin-bottom: 4rem;
 }
 
-/*-------------------------------- MadisonDrinks Page --------------------------------*/
+/*********************************************************************************
+								MADISONDRINKS PAGE
+*********************************************************************************/
 
 #mdscreenwrap {
 	overflow: hidden;
@@ -628,17 +852,34 @@ nav a:hover {
 	text-align: center;
 }
 
-/*-------------------------- Contact Styling ------------------------------ */
+/*********************************************************************************
+								CONTACT PAGE
+*********************************************************************************/
+#contactheaderpic {
+	width: 100%;
+	height: 40rem;
+	position: relative;
+	background: url('alamoBW.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+}
 
 #contact {
-	margin: 0;
-	padding: 6rem 0 0;
+	margin-bottom: 0;
+	padding: 0 1rem 5rem;
 }
 
 #formwrap {
-	width: 90%;
-	margin: 2rem auto 0;
-	font-family: 'Lato', sans-serif;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#form-messages {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 800;
+	text-align: center;
 }
 
 .field {
@@ -646,7 +887,9 @@ nav a:hover {
 }
 
 label {
-	font-weight: 300;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 800;
+	text-transform: lowercase;
 }
 
 input {
@@ -669,39 +912,42 @@ textarea {
 button {
 	width: 100%;
 	height: 3.5rem;
-	background-color: #69c773;
+	background-color: black;
 	font-size: 1.4rem;
 	color: white;
 	border: none;
 	cursor: pointer;
 }
 
+/*********************************** SOCIAL MEDIA ****************************************/
+
 #social {
-	margin: 3rem 0 0;
-	font-family: 'Lato', sans-serif;
-	text-align: center;
+	margin: 3rem auto;
 }
 
 .socialwrap {
 	width: 100%;
-	margin: 0;
+	margin: 2rem auto;
+	text-align: center;
 }
 
 .socialwrap p {
+	font-family: 'Nunito Sans', sans-serif;
 	margin: 0;
-	padding: 1.5rem 1rem;
-	font-size: 1.6rem;
-	font-weight: 300;
+	font-size: 1.8rem;
+	font-weight: 800;
+	text-transform: lowercase;
 }
 
 .socialwrap a {
 	text-decoration: none;
 }
 
+#githubwrap, #socialicons {
+	margin: 1rem auto;
+}
+
 .socialwrap img {
-	width: 10rem;
-	height: 10rem;
-	margin: 0;
 	opacity: .8;
 }
 
@@ -709,19 +955,34 @@ button {
 	opacity: 1;
 }
 
-#facebook {
-	margin: 0 0 0 -4.5rem;
-}
-
 #githubwrap img {
-	margin: -.5rem 0 0;
+	width: 10rem;
+	height: auto;
 }
 
-#mailwrap img {
-	margin: -2rem 0 0;
+#facebook, #linkedin {
+	margin: 1rem auto;
+	height: 8rem;
+	width: auto;
 }
-/*-------------------------- MEDIA QUERIES ------------------------------*/
+
+/*********************************************************************************
+								MEDIA QUERIES
+*********************************************************************************/
 @media screen and (min-width:400px) {
+	#mainpic {
+		height: 65rem;
+	}
+
+	/***************** PROJECT PAGE ******************/
+
+	.casestudy {
+		width: 50%;
+		padding: 0 .5rem;
+	}
+
+	/***************** PROCESS PAGE ******************/
+
 	.processwrapper p {
 		font-size: 1.6rem;
 	}
@@ -741,66 +1002,50 @@ button {
 
 
 @media screen and (min-width:480px) {
-	#skillslist {
-			display: -webkit-box;
-			display: -moz-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-		display: flex;
+
+	#skillsdescription {
+		overflow: hidden;
 	}
 
-	#skillslist ul {
-		width: 33.3%;
-		padding: 0 2rem;
+	#designlist {
+		margin-left: 8%;
+		float: left;
 	}
 
-	#projectheader {
-		padding-left: 4rem;
-		padding-right: 4rem;
+	#devlist {
+		margin-right: 8%;
+		float: right;
 	}
 
-	.squares {
-		max-width: 100%;
-	}
-
-	.square {
-		height: 50%;
-		width: 50%;
-	}
-
-	.captiontext {
-		top: 30%;
-	}
-
-	.captiontext h1 {
-		font-size: 2.4rem;
-	}
-
-	.captiontext p {
-		font-size: 1.4rem;
-	}
+	/***************** PROCESS PAGES ******************/
 
 	.processwrapper {
-		width: 85%;
-	}
-}
-
-@media screen and (min-width: 520px) {
-	.logo img {
-		display: none;	
-	}
-
-	.navlinks {
-		display: inline-block;
-	}
-	
-
-	#more {
-		display: none;
+		padding: 0 3rem;
 	}
 }
 
 @media screen and (min-width:600px) {
+
+	#aboutcontent {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#bargraph {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#designlist {
+		margin-left: 10%;
+	}
+
+	#devlist {
+		margin-right: 10%;
+	}
+
+	/***************** PROJECT PAGE ******************/
+
 	#projectheader p {
 		font-size: 1.6rem;
 	}
@@ -809,6 +1054,7 @@ button {
 		text-align: center;
 	}
 
+	/***************** PROCESS PAGES ******************/
 
 	.processwrapper p {
 		font-size: 1.6rem;
@@ -824,90 +1070,151 @@ button {
 
 	#bvlogodesign img {
 		display: inline-block;
-		float: left;
+		margin: 0;
 	}
 
 	#bvlogodesign #logosketch {
-		width: 72.75%;
+		width: 100%;
 	}
 
 	#bvlogodesign .bvlogo {
-		width: 27.25%;
+		width: 50%;
+		margin-top: -3px;
+		float: left;
+		border: 1px solid #ccc;
 	}
 
 	.bvcolors {
 		height: 9rem;
 	}
 
-	#formwrap {
-		width: 85%;
+	/***************** CONTACT PAGE ******************/
+	#form-messages, label {
+		font-size: 2rem;
 	}
-
+	
 	input {
-		height: 4rem;
+		height: 4.5rem;
+		font-size: 2rem;
 	}
 
 	textarea {
-		height: 20rem;
+		height: 22rem;
+		font-size: 2rem;
 	}
 
-	.socialwrap p {
-		font-size: 1.8rem;
-	}
-
-	.socialwrap img {
-		width: 13rem;
-		height: 13rem;
+	button {
+		height: 4.5rem;
+		font-size: 2rem;
 	}
 }
 
 @media screen and (min-width:680px) {
-	#about {
-		position: relative;
+	.navbar {
+		height: 9rem;
 	}
 
-	#servwrap {
+	#navname {
+		left: 4rem;
+		-moz-transform: translate(0, -50%);
+		-webkit-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+	}
+
+	#navname h1 {
+		font-size: 2.2rem;
+		font-weight: 800;
+	}
+
+	nav {
+		height: 9rem;
+		margin-right: 4rem;
+		display: inline-block;
+		float: right;
 		overflow: hidden;
+	}
+
+	nav a {
+	height: 100%;
+	margin: 0;
+	padding: 3.5rem 1.1rem;
+	float: right;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 800;
+	color: #ccc;
+	text-align: center;
+}
+
+	.navlinks {
+		display: inline-block;
+	}
+	
+
+	#more {
+		display: none;
+	}
+
+	#mainpic {
+		height: 80rem;
+	}
+
+	.infowrap h1 {
+		margin-left: 2rem;
+	}
+
+	#featureswrap {
 			display: -webkit-box;
 			display: -moz-box;
 			display: -ms-flexbox;
 			display: -webkit-flex;
 		display: flex;
-		margin: 3rem 0 0;
-		padding-bottom: 3rem;
+		align-items: flex-start;
 	}
 
-	.service {
+	.feature {
 		width: 33.3%;
-			-webkit-align-self: flex-end;
-			-moz-align-self: flex-end;
-			-ms-align-self: flex-end;
-		align-self: flex-end;
 	}
 
-	#middleserv {
-		margin: 0;
+	/***************** ABOUT PAGE ******************/
+
+	#aboutheaderpic {
+		height: 70rem;
 	}
 
-	.captiontext {
-		top: 26%;
+	/***************** RESUME PAGE ******************/
+
+	#resumediv {
+		padding-top: 9rem;
 	}
 
-	#projectheader p {
-		font-size: 2rem;
+	/***************** PROJECT PAGE ******************/
+
+	#portfolioheaderpic {
+		height: 70rem;
 	}
 
-	.square {
-		height: 33%;
-		width: 33%;
+	.casestudy {
+		padding: 0 1rem;
+	}
+
+	/***************** PROCESS PAGES ******************/
+	#processdiv {
+		padding-top: 9rem;
 	}
 
 	.processwrapper {
-		margin: 0 auto 6rem;
+		padding: 0 5rem;
 	}
 
 	.processwrapper p {
 		font-size: 1.8rem;
+	}
+
+	.sectionheader h1 {
+		margin: 4rem auto;
 	}
 
 	.smallerheader h3 {
@@ -915,6 +1222,10 @@ button {
 	}
 
 	.processpicwrap {
+		margin-top: 12rem;
+	}
+
+	.bottomheader {
 		margin: 6rem auto;
 	}
 
@@ -922,124 +1233,119 @@ button {
 		height: 11rem;
 	}
 
-	#lambdalink {
-		font-size: 2.4rem;
+	#processlink {
+		width: 30rem;
+		margin: 4rem auto;
 	}
 
 	.mdlink {
 		margin: 4rem auto;
 		font-size: 2.4rem;
 	}
-	
-	#skills {
-		margin: 2% 2% 5%;
+
+	#projectnav a {
+		font-size: 2.4rem;
+	}
+
+	/***************** CONTACT PAGE ******************/
+
+	#contactheaderpic {
+		height: 70rem;
+	}
+
+	#contact h1 {
+		margin-left: 0;
+	}
+
+	#social {
+		margin: 7rem auto;
+	}
+
+	.socialwrap {
+		margin: 3rem auto;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#social p {
+		font-size: 2rem;
 	}
 
 	.socialwrap p {
-		font-size: 2rem;
+		position: absolute;
+		top: 50%;
+		-moz-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	#githubwrap, #socialicons {
+		float: right;
+	}
+
+	#githubwrap img {
+		width: 12rem;
+	}
+
+	#facebook, #linkedin {
+		height: 10rem;
 	}
 }
 
 @media screen and (min-width: 840px) {
-
-	#about {
-		padding: 0 0 3rem;
+	#quotetext {
+		text-align: center;
 	}
 
-	#aboutcontent {
-		margin: 0 auto;
-		width: 85%;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-		display: flex;
-			-webkit-align-items: center;
-		align-items: center;
+	/***************** PROJECT PAGE ******************/
+	
+	.casestudy {
+		width: 33%;
 	}
 
-	#picwrap {
-		width: 50%;
-	}
+	/***************** PROCESS PAGE ******************/
 
-	#picwrap img {
-		max-height: 21rem;
-		max-width: 21rem;
-	}
-
-	#profiletext {
-		width: 50%;
-		text-align: left;
-	}
-
-	#profiletext p {
-		font-size: 1.8rem;
-	}
-
-	#contact {
-		min-height: 64rem;
-		margin: 0;
-		padding-bottom: 1rem;
-		overflow: hidden;
-	}
-
-
-	#contactcontent {
-		width: 100%;
-		margin: 1rem 0;
-		overflow: hidden;
-			display: -webkit-box;
-			display: -moz-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-		display: flex;
-		position: relative;
-	}
-
-	.processwrapper {
-		margin-bottom: 8rem;
+	.toppic {
+		width: 90%;
 	}
 
 	.processpicwrap {
 		width: 90%;
+		margin-top: 14rem;
 	}
 
-	.topheader, .processpicwrap {
-		margin: 8rem auto;
+	.bottomheader {
+		margin: 8rem auto 6rem;
 	}
 
 	.bvcolors {
 		height: 13rem;		
 	}
 
-	#formwrap {
-		width: 40%;
-		margin: 3rem auto;
-		position: absolute;
-		top: 10%;
-		left: 12%;
-			-webkit-transform: translate(-15%, -10%);
-		transform: translate(-15%, -10%);
-	}
-
-	#social {
-		width: 50%;
-		margin: 3rem auto;
-		position: relative;
-		left: 25%;
-	}
-
-	.socialwrap p {
-		font-size: 1.6rem;
-	} 
-
-	.socialwrap img {
-		width: 10rem;
-		height: 10rem;
-	}
+	/***************** CONTACT PAGE ******************/
 
 }
 
 @media screen and (min-width:960px) {
+
+	#navname h1 {
+		font-size: 2.4rem;
+	}
+
+	nav a {
+		padding: 3.4rem 1.1rem;
+		font-size: 2rem;
+		margin: 0 1rem;
+	}
+
+	#lastnavlink {
+		margin-right: 0;
+	}
+
+	#mainpic {
+		height: 70rem;
+	}
+
 	#hellowrap h1 {
 		font-size: 4rem;
 	}
@@ -1048,68 +1354,242 @@ button {
 		font-size: 2rem;
 	}
 
-	#services {
-		min-height: 70rem;
+	#quotetext {
+		width: 90%;
 	}
 
-	.sectionheader h1 {
-		font-size: 4rem;
+	/***************** ABOUT PAGE ******************/
+
+	#aboutheaderpic {
+		height: 60rem;
 	}
 
-	.service h1 {
-		font-size: 2.4rem;
+	#aboutcontent {
+		margin: 2rem auto 4rem;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
 	}
 
-	#skillswrap {
-		margin: 2rem 0 0;
+	#aboutmetext {
+		width: 60%;
+		position: absolute;
+		top: 50%;
+		right: 3rem;
+		-moz-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
 	}
 
-	#skillslist li p {
-		font-size: 1.6rem;
+	#profileresume {
+		width: 40%;
+		float: left;
 	}
 
-	#columnwrap {
-			-webkit-column-count: 2;
-			-moz-column-count: 2;
-		column-count: 2;
+	#aboutmepic {
+		width: 25rem;
+		margin: 0 auto;
+		display: block;
 	}
 
-	#authordiv {
-		margin-right: 10%;
+	#aboutmepic img {
+		width: 100%;
+		height: auto;
 	}
 
-	#projectheader h1 {
-		font-size: 4rem;
+	#resumelink {
+		width: 25rem;
+	}
+
+	#skillscontent {
+		margin: 0 auto;
+		padding: 0 3rem;
+		position: relative;
+		overflow: hidden;
+	}
+
+	#skillsdescription {
+		width: 50%;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		-moz-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	#bargraph {
+		width: 50%;
+		margin: 0;
+		padding: 0;
+		float: right;
+	}
+
+	#designlist, #devlist {
+		width: 50%;
+		margin: 0;
+		display: block;
+	}
+
+	/***************** PROJECT PAGE ******************/
+
+	#portfolioheaderpic {
+		height: 60rem;
+	}
+
+	#casestudieswrap {
+		display: none;
+	}
+
+	.squares {
+		width: 70%;
+		margin: 3rem auto;
+		padding: 0;
+		display: block;
+		overflow: hidden;
 	}
 
 	.square {
-		height: 25%;
-		width: 25%;
+		width: 33.33%;
+		height: 100%;
+		padding: 0;
+		float: left;
+		overflow: hidden;
+		position: relative;
+	}
+	.square:hover .sqpic {
+		-webkit-transform: scale(1.1); 
+	    -moz-transform: scale(1.1);
+	    -o-transform: scale(1.1);
+	    transform: scale(1.1);
+	}
+
+	.square:hover .caption {
+		opacity: 1;
+	}
+		
+	.sqpic {
+		height: auto;
+		width: 100%;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		float: left;
+	}
+
+	.caption {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(51, 51, 51, 0.6);
+		opacity: 0;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		z-index: 3;
+		position: absolute;
+	}
+
+	.captiontext {
+		font-family: 'Lato', sans-serif;
+		color: white;
+		text-align: center;
+		position: relative;
+		top: 20%;
+	}
+
+	.captiontext h1 {
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 2rem;
+		font-weight: 800;
+		color: white;
+		line-height: 1;
+		text-decoration: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.captiontext p {
+		font-family: 'Lato', sans-serif;
+		font-size: 1.4rem;
+		font-weight: 300;
+	}
+	.casestudybox {
+		width: 70%;
+		margin: 2rem auto;
+		padding: .3rem;
+		border: 3px solid white;
+	}
+	.casestudybox p {
+		font-family: 'Nunito Sans', sans-serif;
+		font-weight: 800;
+	}
+	.casestudybox:hover{
+		background-color: white;
+		color: rgba(0, 0, 0, .8);
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+		-o-transition: .5s;
+		-ms-transition: .5s;
+		transition: .5s;
 	}
 
 	.bvcolors {
 		height: 15rem;
 	}
 
-	#formwrap {
-		width: 35%;
-		left: 17%;
+	#lambdalogodesign {
+		width: 70%;
 	}
 
-	label {
-		font-size: 1.8rem;
+	/***************** CONTACT PAGE ******************/
+
+	#contactheaderpic {
+		height: 60rem;
 	}
 
-	#social {
-		left: 23%;
+	#contact h1 {
+		margin-left: 2rem;
 	}
 
-	.socialwrap p {
-		font-size: 1.8rem;
+	#formwrap, #social {
+		width: 80%;
+	}
+
+	#form-messages, label {
+		font-size: 2.4rem;
+	}
+
+	input, button {
+		height: 5rem;
+		font-size: 2.4rem;
+	}
+
+	textarea {
+		height: 24rem;
+		font-size: 2.4rem;
+	}
+
+	#social p {
+		font-size: 2.4rem;
+	}
+
+	#githubwrap img {
+		width: 13rem;
+	}
+
+	#facebook, #linkedin {
+		height: 11rem;
 	}
 }
 
 @media screen and (min-width: 1160px) {
+
+	#quotetext {
+		width: 70%;
+	}
+
 	#skillslist ul h3 {
 		font-size: 2.4rem;
 	}
@@ -1118,22 +1598,25 @@ button {
 		font-size: 1.8rem;
 	}
 
+	/***************** PROJECT PAGE ******************/
+
 	#authordiv {
 		margin-right: 16%;
 	}
 
-	.square {
-		height: 20%;
-		width: 20%;
+	.captiontext {
+		top: 29%;
 	}
+
+	/***************** PROCESS PAGES ******************/
 
 	.processwrapper {
-		width: 80%;
+		padding: 0 12rem;
 	}
 
-	#social {
-		left: 20%;
-	}
+	/***************** CONTACT PAGE ******************/
 }
+
+@media screen and (min-width: 1460px) {#mainpic {background-position: center center;}}
 
 

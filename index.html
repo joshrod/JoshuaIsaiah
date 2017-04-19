@@ -4,155 +4,121 @@
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 			<title>Joshua Isaiah Rodriguez | Web Developer & Graphic Designer</title>
-			<meta name="description" content="Joshua Isaiah Rodriguez is a web developer, graphic designer, and aspiring full-stack developer currently based in San Antonio, Texas.">
+			<meta name="description" content="Joshua Isaiah Rodriguez is a front-end web developer and graphic designer currently based in San Antonio, Texas.">
 			<meta name="author" content="Joshua Isaiah Rodriguez">
-			<meta name="viewport" content="width=device-width; initial-scale=1.0">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+			<link rel="canonical" href="http://joshuaisaiah.com"/>
 			<link type="text/css" rel="stylesheet" href="custom.css" />
-			<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800" rel="stylesheet">
 		</head>
 		<body id="indexbody">
 			<div class="navbar" id="navigation">
-				<div class="logo">
-					<img id="JR" src="JR-Logo.png" />
+				<div id="navwrap">
+					<div id="navname">
+						<h1>Joshua Isaiah Rodriguez</h1>
+					</div>
+					<nav>
+						<a href="/contact" id="lastnavlink" class="navlinks" title="Point Of">Contact</a>
+						<a href="/portfolio" class="navlinks" title="From The">Portfolio</a>
+						<a href="/about" class="navlinks" title="What We Talkin'">About</a>
+						<a href="javascript:;" class="navlinks active" title="Just Hold On We're Going">Home</a>
+						<a id="more" href="javascript:;">&#9776;</a>
+					</nav>
 				</div>
-				<div id="navname">
-					<h1>Joshua Isaiah Rodriguez</h1>
-				</div>
-				<nav>
-					<a href="javascript:;" class="active navlinks" title="What We Talkin'">About</a>
-					<a href="/projects" class="navlinks" title="From The">Projects</a>
-					<a href="/contact" class="navlinks" title="Point Of">Contact</a>
-					<a id="more" href="javascript:;">&#9776;</a>
-				</nav>
 			</div>
 			<div id="responsive">
 				<div class="rnav">
-					<a href="/projects" title="From The">Projects</a>
+					<a class="ractive" href="javascript:;" title="Just Hold On We're Going">home</a>
 				</div>
 				<div class="rnav">
-					<a href="/contact" title="Point Of">Contact</a>
+					<a href="/about" title="What We Talkin'">about</a>
+				</div>
+				<div class="rnav">
+					<a href="/projects" title="From The">portfolio</a>
+				</div>
+				<div class="rnav">
+					<a href="/contact" title="Point Of">contact</a>
 				</div>
 			</div>
-			<div id="main_pic">
+			<div id="mainpic">
 				<div id="hellodiv">
 					<div id="hellowrap">
-						<h1>What's up? I'm Josh.</h1>
-						<p>Front-end web developer, graphic designer, and aspiring full-stack developer.</p>
+						<h1>Hello there. I'm Josh.</h1>
+						<p>Front-end web developer and graphic designer currently based in San Antonio, Texas.</p>
 					</div>
 					<div id="arrowwrap">
-						<a id="darrow" href="#about"></a>
+						<a id="darrow" href="#quote"></a>
 					</div>
 				</div>
 			</div>
-			<div id="about">
-				<div class="sectionheader">
-					<h1>About</h1>
-					<p>"Wait...who?"</p>
-				</div>
-				<div id="aboutcontent">
-					<div id="picwrap">
-						<img src="profilepic2.png" alt="Joshua Isaiah Rodriguez Web Developer Graphic Designer"/>
-					</div>
-					<div id="profiletext">
-						<p>Programming and designing are my things. My creative work has helped advertise, promote, and relate information in an easily accessible manner. When I'm not busy, I like watching superhero movies, mixing music, playing Destiny, and sampling craft beers. Remember the Alamo. On Wisconsin.</p>
-						<p id="city">Currently based in San Antonio, Texas</p>
+			<div id="quote">
+				<div id="quotewrap">
+					<div id="quotetext">
+						<p>"I just pay for everything and design everything, make everyone look cooler."</p>
+						<div id="credit">
+							<p>- Tony Stark</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div id="services">
-				<div class="sectionheader">
-					<h1>Services</h1>
-					<p>"Uhh...what can you do?"</p>
-				</div>
-				<div id="servwrap">
-					<div class="service">
-						<div class="servimg">
-							<img id="snapchat" src="snapchatserv.png" alt="Social Media Graphics" />
+			<div id="sitefeatures">
+				<div id="featureswrap">
+					<div class="feature">
+						<div class="featureheader">
+							<h3>"Who are you?"</h3>
 						</div>
-						<h1>Social Media Graphics</h1>
-					</div>
-					<div id="middleserv" class="service">
-						<div class="servimg">
-							<img id="website" src="websiteserv.png" alt="Responsive Web Design"/>
+						<div class="featurepicwrap">
+							<img src="JoshRod1Wide.png" alt="Joshua Isaiah Rodriguez Hill">
 						</div>
-						<h1>Responsive Web Design</h1>
-					</div>
-					<div class="service">
-						<div class="servimg">
-							<img id="computer" src="object.png" alt="Programming"/>
+						<div class="featuretext">
+							<p>Creating designs and putting them to work are my things. When I'm not busy coding or getting creative, I like mixing music and playing Destiny.</p>
 						</div>
-						<h1>Object-Oriented Programming</h1>
+						<div class="featurelink">
+							<a href="/about">GET TO KNOW ME</a>
+						</div>
 					</div>
-				</div>
-				<div id="skillswrap">
-					<div id="skillslist">
-						<ul id="firstlist">
-							<h3 class="medium">Web</h3>
-							<div id="columnwrap">
-								<li class="green">
-									<p>HTML5</p>
-								</li>
-								<li class="green">
-									<p>CSS3</p>
-								</li>
-								<li class="green">
-									<p>WordPress</p>
-								</li>
-								<li class="yellow">
-									<p>JavaScript</p>
-								</li>
-								<li class="yellow">
-									<p>jQuery</p>
-								</li>
-								<li class="yellow">
-									<p>Bootstrap</p>
-								</li>
-								<li class="yellow">
-									<p>Dreamweaver</p>
-								</li>
-								<li class="yellow">
-									<p>SEO</p>
-								</li>
-							</div>
-						</ul>
-						<ul id="secondlist">
-							<h3 class="medium">Graphics</h3>
-							<li class="green">
-								<p>Photoshop</p>
-							</li>
-							<li class="green">
-								<p>Illustrator</p>
-							</li>
-							<li class="yellow">
-								<p>InDesign</p>
-							</li>
-							<li class="red">
-								<p>Premiere</p>
-							</li>
-						</ul>
-						<ul id="thirdlist">
-							<h3 class="medium">Software</h3>
-							<li class="green">
-								<p>Java</p>
-							</li>
-							<li class="green">
-								<p>Android Studio</p>
-							</li>
-							<li class="green">
-								<p>Git</p>
-							</li>
-							<li class="yellow">
-								<p>C++</p>
-							</li>
-						</ul>
+					<div class="feature">
+						<div class="featureheader">
+							<h3>"So...what do you do?"</h3>
+						</div>
+						<div class="featurepicwrap">
+							<img src="designpic.png" alt="Design Workspace">
+						</div>
+						<div class="featuretext">
+							<p>My creative work has helped advertise, promote, and relate information in an easily accessible manner. Come and check it out for yourself.</p>
+						</div>
+						<div class="featurelink">
+							<a href="/portfolio">SEE MY WORK</a>
+						</div>
+					</div>
+					<div class="feature">
+						<div class="featureheader">
+							<h3>"Let's team up!"</h3>
+						</div>
+						<div class="featurepicwrap">
+							<img src="alamo.png" alt="San Antonio Alamo">
+						</div>
+						<div class="featuretext">
+							<p>I'm currently located in the city of San Antonio, Texas. Don't let that stop you, though. I can and have worked with clients across the country.</p>
+						</div>
+						<div class="featurelink">
+							<a href="/contact">SEND A HOLLER</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="jquery-3.1.1.min.js"></script>
-		<script src="smoothscroll.js"></script>
-		<script src="script.js"></script>
+			<div id="footer">
+				<div id="footerwrap">
+					<div id="copyright">
+						<p>&#169;2017 Joshua Isaiah Rodriguez</p>
+					</div>
+				</div>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="jquery-3.1.1.min.js"></script>
+			<script src="smoothscroll.js"></script>
+			<script src="script.js"></script>
 		</body>
 	</html>
