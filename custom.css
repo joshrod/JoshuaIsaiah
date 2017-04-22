@@ -159,6 +159,7 @@ nav a {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.4);
 	position: relative;
+	display: none;
 }
 
 #hellowrap {
@@ -170,6 +171,7 @@ nav a {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+	padding: 0 1rem;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
@@ -289,6 +291,8 @@ nav a {
 	font-size: 1.2rem;
 	border: 3px solid black;
 	text-align: center;
+	transition: .1s ease-in;
+
 }
 
 .featurelink:hover {
@@ -430,37 +434,42 @@ nav a {
 	height: 2.5rem;
 	border-radius: 2rem;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
 }
 
 .barfill p {
 	color: white;
-	position: relative;
-	top: 48%;
-	-moz-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	position: absolute;
+	top: -1.3rem;
+	left: 50%;
+	-webkit-transform: translate( -50%, 0);
+	-moz-transform: translate( -50%, 0);
+	-ms-transform: translate( -50%, 0);
+	transform: translate( -50%, 0);
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 1.6rem;
+	white-space: nowrap;
 }
 
 #graphicbar {
-	width: 98%;
+	width: 0;
 	background-color: #8a0707;
 }
 
 #webbar {
-	width: 95%;
+	width: 0;
 	background-color: #128499;
 }
 
 #clientbar {
-	width: 98%;
+	width: 0;
 	background-color: #559912;
 }
 
 #javabar {
-	width: 70%;
+	width: 0%;
 	background-color: #b37803;
 }
 
@@ -560,7 +569,7 @@ nav a {
 
 .casestudy {
 	width: 100%;
-	margin: 1.5rem auto;
+	margin: 3rem auto;
 	float: left;
 }
 
@@ -628,6 +637,10 @@ nav a {
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+}
+
+.fadepic {
+	opacity: 0;
 }
 
 .toppic {
@@ -779,6 +792,7 @@ nav a {
 	font-size: 1.2rem;
 	border: 3px solid black;
 	text-align: center;
+	transition: .1s ease-in;
 }
 
 #processlink:hover {
@@ -815,13 +829,21 @@ nav a {
  	width: 47%;
  }
 
-#cycflyer, #cycbanner, #cycinsta {
+#topcycle, #cycflyer, #cycbanner, #cycinsta {
 	border: 1px solid #ddd;
 }
 
 /*********************************************************************************
 						LATIN NIGHT / SAN ANTONIO PAGES
 *********************************************************************************/
+
+#latinnightmock, #sanantoniomock {
+	text-align: center;
+}
+
+#latinnightmock img, #sanantoniomock img {
+	max-height: 60rem;
+}
 
 #lnfilter, #safilter {
 	margin-bottom: 4rem;
@@ -949,10 +971,18 @@ button {
 
 .socialwrap img {
 	opacity: .8;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
 }
 
 .socialwrap img:hover {
 	opacity: 1;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
 }
 
 #githubwrap img {
@@ -1520,6 +1550,11 @@ button {
 		margin: 2rem auto;
 		padding: .3rem;
 		border: 3px solid white;
+		-webkit-transition: .3s;
+		-moz-transition: .3s;
+		-o-transition: .3s;
+		-ms-transition: .3s;
+		transition: .3s;
 	}
 	.casestudybox p {
 		font-family: 'Nunito Sans', sans-serif;
@@ -1528,11 +1563,11 @@ button {
 	.casestudybox:hover{
 		background-color: white;
 		color: rgba(0, 0, 0, .8);
-		-webkit-transition: .5s;
-		-moz-transition: .5s;
-		-o-transition: .5s;
-		-ms-transition: .5s;
-		transition: .5s;
+		-webkit-transition: .3s;
+		-moz-transition: .3s;
+		-o-transition: .3s;
+		-ms-transition: .3s;
+		transition: .3s;
 	}
 
 	.bvcolors {
