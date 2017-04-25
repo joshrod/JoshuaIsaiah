@@ -50,7 +50,7 @@ $(function() {
 
 });
 
-$(document).ready(function() {
+$(window).on('load', function() {
 	$('#more').click(function() {
 		$('#responsive').slideToggle("fast");
 	});
