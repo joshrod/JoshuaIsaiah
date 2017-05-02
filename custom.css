@@ -565,6 +565,10 @@ nav a {
 	padding: 0 1rem 5rem;
 }
 
+.clearfix {
+	clear: both;
+}
+
 /********************************* CASE STUDIES **************************************/
 #casestudieswrap {
 	width: 100%;
@@ -855,28 +859,12 @@ nav a {
 }
 
 /*********************************************************************************
-								MADISONDRINKS PAGE
+								META PAGE
 *********************************************************************************/
 
-#mdscreenwrap {
-	overflow: hidden;
-}
-
-#mdscreen1, #mdscreen2, #mdscreen3 {
-	width: 32%;
-	float: left;
-}
-
-#mdscreen2 {
-	margin-left: 2%;
-	margin-right: 2%;
-}
-
-.mdlink {
-	margin: 2rem auto;
-	font-size: 1.6rem;
-	font-weight: 400;
-	text-align: center;
+#aboutpagescreen {
+	border: 1px solid #ccc;
+	padding: 1rem;
 }
 
 /*********************************************************************************
