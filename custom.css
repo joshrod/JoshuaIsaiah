@@ -188,7 +188,7 @@ nav a {
 
 #hellodiv p {
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.3;
 }
 
@@ -217,7 +217,7 @@ nav a {
 	width: 100%;
 	margin: 1rem auto;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	background-color: white;
 	overflow: hidden;
 	box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
@@ -250,7 +250,7 @@ nav a {
 	width: 100%;
 	margin: 1rem auto;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	background-color: white;
 	overflow: hidden;
 	box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
@@ -270,7 +270,7 @@ nav a {
 
 .featureheader h3 {
 	font-family: 'Nunito Sans', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 2rem;
 	color: black;
 }
@@ -403,7 +403,7 @@ nav a {
 #aboutmewrapper p {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.6rem;
 	line-height: 1.5;
 }
@@ -453,7 +453,7 @@ nav a {
 	-ms-transform: translate( -50%, 0);
 	transform: translate( -50%, 0);
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.6rem;
 	white-space: nowrap;
 }
@@ -502,7 +502,7 @@ nav a {
 	margin: .5rem 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.6rem;
 }
 
@@ -618,7 +618,7 @@ nav a {
 	padding: 0;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6rem;
-	font-weight: 300;
+	font-weight: 400;
 }
 /*********************************** SQUARES ****************************************/
 
@@ -645,7 +645,7 @@ nav a {
 	max-width: 144rem;
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .fadepic {
@@ -689,7 +689,7 @@ nav a {
 .smallerheader p {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .processpicwrap img {
@@ -731,6 +731,24 @@ nav a {
 
 #nextproject {
 	float: right;
+}
+
+#rightarrow {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid black;
+  display: inline-block;
+}
+
+#leftarrow {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  border-right: 5px solid black;
+  display: inline-block;
 }
 
 /*********************************************************************************
@@ -1270,6 +1288,18 @@ button {
 		font-size: 2.4rem;
 	}
 
+	#rightarrow {
+		border-top: 8px solid transparent;
+  		border-bottom: 8px solid transparent;
+  		border-left: 8px solid black;
+	}
+
+	#leftarrow {
+		border-top: 8px solid transparent;
+  		border-bottom: 8px solid transparent;
+  		border-right: 8px solid black;
+	}
+
 	/***************** CONTACT PAGE ******************/
 
 	#contactheaderpic {
@@ -1536,7 +1566,7 @@ button {
 	.captiontext p {
 		font-family: 'Lato', sans-serif;
 		font-size: 1.4rem;
-		font-weight: 300;
+		font-weight: 400;
 	}
 	.casestudybox {
 		width: 70%;
