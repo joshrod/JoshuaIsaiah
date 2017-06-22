@@ -51,6 +51,10 @@ $(function() {
 });
 
 $(window).on('load', function() {
+
+	var prev = $('.navbar').height();
+	var win = $(window);
+
 	$('#more').click(function() {
 		$('#responsive').slideToggle("fast");
 	});
@@ -69,6 +73,7 @@ $(window).on('load', function() {
 	windowMockCheck();
 
 	$('#darrow').smoothScroll();
+	$('.recentlink').smoothScroll();
 
 	$('#hellodiv').delay(500).fadeIn(1000);
 
@@ -76,11 +81,20 @@ $(window).on('load', function() {
 
 	fadepic();
 
-	$(window).scroll( function(){
- 
+	$(window).scroll( function() {
+
+		var topWindow = win.scrollTop();
+
+  		$('.navbar').toggleClass('hidden', topWindow > prev);
+  		prev = topWindow;
+	
         fillbar();
     	
     	fadepic();
+
+    	if ($('#responsive').is(":visible")) {
+    		$('#responsive').fadeOut(200);
+    	}
 
     });
 });

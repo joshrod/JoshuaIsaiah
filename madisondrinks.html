@@ -4,75 +4,118 @@
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 			<title>MadisonDrinks | Joshua Isaiah Rodriguez</title>
-			<meta name="description" content="Joshua Isaiah Rodriguez is a web developer, graphic designer, and aspiring full-stack developer currently based in San Antonio, Texas. This is an overview of an informative Android application for drink specials in downtown Madison, Wisconsin.">
+			<meta name="description" content="Project involving UI Design and Mobile Development. Go into the details of this side project by viewing this case study.">
 			<meta name="author" content="Joshua Isaiah Rodriguez">
-			<meta name="viewport" content="width=device-width; initial-scale=1.0">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+			<link rel="canonical" href="http://joshuaisaiah.com"/>
 			<link type="text/css" rel="stylesheet" href="custom.css" />
-			<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800" rel="stylesheet">
 		</head>
-		<body id="indexbody">
+		<body>
 			<div class="navbar" id="navigation">
-				<div class="logo">
-					<img id="JR" src="JR-Logo.png" />
+				<div id="navwrap">
+					<div id="navname">
+						<h1>Joshua Isaiah Rodriguez</h1>
+					</div>
+					<nav>
+						<a href="/contact" id="lastnavlink" class="navlinks" title="Point Of">Contact</a>
+						<a href="/blog" class="navlinks" title="Tough On The">Blog</a>
+						<a href="/about" class="navlinks" title="What We Talkin'">About</a>
+						<a href="/" class="navlinks" title="Ain't Got No Investment">Portfolio</a>
+						<a id="more" href="javascript:;"><img src="hamburger.svg" ></a>
+					</nav>
 				</div>
-				<div id="navname">
-					<h1>Joshua Isaiah Rodriguez</h1>
-				</div>
-				<nav>
-					<a href="/" class="navlinks" title="What We Talkin'">About</a>
-					<a href="/projects" class="active navlinks" title="From The">Projects</a>
-					<a href="/contact" class="navlinks" title="Point Of">Contact</a>
-					<a id="more" href="javascript:;">&#9776;</a>
-				</nav>
 			</div>
 			<div id="responsive">
 				<div class="rnav">
-					<a href="/projects" title="From The">Projects</a>
+					<a href="/" title="Ain't Got No Investment">portfolio</a>
 				</div>
 				<div class="rnav">
-					<a href="/contact" title="Point Of">Contact</a>
+					<a href="/about" title="What We Talkin'">about</a>
+				</div>
+				<div class="rnav">
+					<a href="/blog" title="Tough On The Blog">blog</a>
+				</div>
+				<div class="rnav">
+					<a href="/contact" title="Point Of">contact</a>
 				</div>
 			</div>
-			<div class="processwrapper">
-				<div class="sectionheader">
-					<h1>MadisonDrinks</h1>
-					<p>Mobile Development / UI Design</p>
+			<div id="processdiv">
+				<div class="processwrapper">
+					<div class="sectionheader processheader">
+						<h1>madisondrinks</h1>
+					</div>
+				<div class="toppic fadepic">
+					<img src="mdapp/livemockup.png" alt="MadisonDrinks Live App" >
 				</div>
-				<div class="smallerheader topheader">
-					<p>While trying to find my way in Madison after university, a group of friends and I that were still in town would get together at pubs and bars downtown on some days after work. We didn't have funds to carelessly spend, so we would seek out the cheapest places depending on the day we were available. This is where the idea for an application that would inform the user of the places where they could save money that day started.</p>
+				<div class="smallerheader fadepic">
+					<h3>Overview</h3>
+					<p>This was an idea I've had for a long time. In downtown Madison, there are so many drink specials to keep track of throughout the week that it gets difficult finding a place to let loose on a small budget. Outlined while having talks with friends after work, sitting on top of barstools during difficult financial times, this app idea looked to ease our troubles.
+					</p>
 				</div>
-				<div class="processpicwrap">
-					<img src="Feature Graphic No Motto.png" alt="MadisonDrinks Feature Graphic" >
+				<div class="processpicwrap fadepic">
+					<img src="mdapp/mdprocess.png" alt="App Design Journal" >
 				</div>
-				<div class="smallerheader">
-					<h3>Research and Development</h3>
-					<p>With prior programming knowledge in Java from university, I began to learn how the Android Operating System worked at a deeper level. I learned about how activities, fragments, views, and Android XML files worked together to provide a functional application. The entire project was a challenge. Applying Java in different ways than I was accustomed to fried my brain many times.<br><br>
-					I decided to focus on functionality rather than design for this project. What's the point of something looking great if its main purpose is to work properly?<br><br>
-					I envisioned an application that was easy and intuitive to use. I wanted it to open up to the current day and display a list of the bars in downtown Madison. Tapping on the bar's name revealed its current drink specials as well as have the ability to open Google Maps to show the bar's location. With one swipe left or right, the day would change depending on the direction.<br><br>
-					I used a Title Strip of the days of the week up at the top that would switch fragments in the activity when the user swiped the screen or touched the strip. The list of bars itself is an Expandable List View, comprised of a HashMap that used Strings as "keys", and a List of Strings as its "value."</p>
+				<div class="smallerheader facepic">
+					<h3>Mission</h3>
+					<p>I started researching what it takes to build an app and what similar apps were doing to provide the information. Luckily, Android apps use Java, a programming language that I used the most during college. Now it was about learning in-depth how Android OS works from a developer's standpoint.<br><br>
+					I wanted the app to be intuitive and informative, displaying all necessary pieces so the user can easily find what they need. First, I needed an icon that users can recognize and make the connection to Madison and drinking. So I started sketching out designs for the icon, as well as figuring out ways to put all the information on the same space without having too much clutter in the app.</p>
 				</div>
-				<div id="mdscreenwrap" class="processpicwrap">
-					<img id="mdscreen1" src="mdscreen1.png" alt="MadisonDrinks Screen 1" >
-					<img id="mdscreen2" src="mdscreen2.png" alt="MadisonDrinks Screen 2" >
-					<img id="mdscreen3" src="mdscreen3.png" alt="MadisonDrinks Screen 3" >
+				<div class="processpicwrap fadepic">
+					<img src="mdapp/mdinfographictext.jpg" alt="MadisonDrinks Infographic" >
 				</div>
-				<div class="smallerheader">
-					<h3>On The Shelf...For Now</h3>
-					<p>This project is currently an excellent starting point. I know it could look a lot better, but the important thing to note is that it works as intended. Eventually, I want to go back, optimize the code, and fix the application design. I can even see myself reworking this app to fit other cities as I continue learning.<br><br>
-					My aspirations, however, cannot be fulfilled at the moment. During the application's development, I used my significant other's laptop rather than my current 2008 Macbook, and I didn't want to keep taking it while she was working on graduating university herself. While I was using the Android API for Eclipse, I found it much easier to use Android Studio, a program that my old Macbook cannot support.<br><br>
-					The code for the application can be found on my GitHub profile, and the application itself can be found on the Google Play Store for your viewing pleasure.</p>
+				<div class="smallerheader fadepic">
+					<h3>design details</h3>
+					<p>The icon I came up with is a full beer glass with a capitol on it. The shape of the glass is a well-known symbol to represent beer, and the capitol is an homage to the capitol building in Madison.<br><br>
+					The color scheme was based off the color of the beer. The primary blue, #0060a7 is a direct complement to the orange, and the rest of the blues are shades it. The primary blue made the icon stand out and fits into the material style on current Android apps.<br><br>
+					Users can access information easily with a simple interface. The app automatically opens up to the current day. Users can see a photo of the bar, its name, hours, and distance away from their current location. Clicking the bar opens a drop-down list of their specials that day, along with the times they are available, and a link to Google Maps to get directions.<br><br>
+					They can also swipe left or right to switch days of the week, sort bars by their title or distance away, and filter the bars by the kind of specials they're having. All of these functions are available on the home screen.
+					</p>
 				</div>
-				<div class="mdlink">
-					<a href="https://github.com/joshrod/MadisonDrinks" target="_blank">MadisonDrinks GitHub Repository</a>
+				<div class="processpicwrap fadepic">
+					<img src="androidcode.png" alt="Android Code" >
 				</div>
-				<div class="mdlink">
-					<a href="https://play.google.com/store/apps/details?id=joshrod.com.madisondrinks" target="_blank">MadisonDrinks on the Play Store</a>
+				<div class="smallerheader fadepic">
+					<h3>prototype</h3>
+					<p>Learning mobile development is a lot harder than the Java programs I had to make in college.<br><br>However, I did manage to scrap out a prototype. It uses one Main Activity and seven Fragments that represent the days of the week. To populate the bar list, it uses ExpandableListViews. These ExpandableListViews' headers and children are composed by connecting ArrayLists via a HashMap key. It works as intended for the most part, but it currently doesn't match the design I have for it and it's missing the sort and filter features.
+					</p>
+				</div>
+				<div class="smallerheader bottomheader fadepic">
+					<h3>epilogue</h3>
+					<p>
+					The app is on the shelf for now. I eventually want to populate the list using an SQL database, which would tremendously optimize the code. Right now, I have so many repetitive calls to add to the ArrayLists...it's disgusting.<br><br>
+					Why is it on the shelf? My computer is an Early 2008 Macbook, so I had to use someone else's more recent laptop to make the prototype. But! I do have big plans to keep learning and update it in the future. For now you can check the prototype's code on my GitHub page.
+					</p>
+				</div>
+				<div id="processlink">
+					<a href="https://github.com/joshrod/MadisonDrinks/tree/master/app/src/main/java/joshrod/com/madisondrinks" target="_blank">CHECK OUT THE CODE</a>
+				</div>
+				<div id="projectnav">
+						<div id="prevproject">
+							<a href="/lambdas">
+								<div id="leftarrow"></div>
+								<span class="projecttext">previous project</span>
+							</a>
+						</div>
+						<div id="nextproject">
+							<a href="/cycle">
+								<span class="projecttext">next project</span>
+								<div id="rightarrow"></div>
+							</a>
+						</div>					
+					</div>
+	 			</div>
+ 			</div>
+			<div id="footer">
+				<div id="footerwrap">
+					<div id="copyright">
+						<p>&#169;2017 Joshua Isaiah Rodriguez</p>
+					</div>
 				</div>
 			</div>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-			<script src="jquery-3.1.1.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
 			<script src="smoothscroll.js"></script>
 			<script src="script.js"></script>
 		</body>
