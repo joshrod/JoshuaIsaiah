@@ -1,0 +1,32 @@
+.skillsbar {
+	margin: 3rem auto;
+	height: 2.5rem;
+	background-color: $darkgray;
+	border-radius: 2rem;
+	&:first-child {
+		margin-top: 1rem;
+	}
+	@include mdTablet {
+		height: 3rem;
+	}
+
+	.barfill {
+		height: 2.5rem;
+		border-radius: 2rem;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		@include mdTablet {
+			height: 3rem;
+		}
+
+		p {
+			@include shift(-50%, 0);
+			color: white;
+			position: absolute;
+			top: -1.1rem;
+			left: 50%;
+			white-space: nowrap;
+		}
+	}
+}

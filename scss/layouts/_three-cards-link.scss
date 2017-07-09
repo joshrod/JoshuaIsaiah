@@ -1,0 +1,41 @@
+.three-cards {	
+	@include mdTablet {
+		@include flexbox;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+	}
+
+	.feature {
+		width: 100%;
+		padding-bottom: 1rem;
+		background-color: white;
+		-webkit-box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+		        box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+		&:nth-child(2n) {
+			margin: 2rem auto;
+		}
+		@include mdTablet {
+			width: 33.3%;
+			&:nth-child(2n) {
+				margin: 0 2rem;
+			}
+		}
+
+		h3 {
+			margin: 0;
+			padding: 1rem;
+			font-size: 2rem;
+		}
+
+		p {
+			padding: 0 1.5rem;
+			line-height: 1.5;
+		}
+
+		.linkbox {
+			margin: 1rem auto;
+			width: calc(100% - 3rem);
+		}
+	}
+}

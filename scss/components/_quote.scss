@@ -1,0 +1,31 @@
+#quotewrap {
+	margin: 0 auto;
+	text-align: center;
+
+	#quotetext {
+		padding: 2rem;
+		text-align: left;
+		display: inline-block;
+		@include lgTablet {
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 2rem;
+			color: $rnavgray;
+			@include mdDesktop {
+				font-size: 2.4rem;
+			}
+		}
+	}
+
+	#credit {
+		text-align: right;
+		font-style: normal;
+
+		p {
+			font-family: $headerfont;
+			font-weight: 800;
+		}
+	}
+}

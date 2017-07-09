@@ -1,0 +1,10 @@
+.gridwrap {
+	@include clearfix;
+	padding: 0 1rem;
+	@include mdTablet {
+		padding: 0 1.5rem;
+	}
+	@include smDesktop {
+		padding: 0 2rem;
+	}
+}

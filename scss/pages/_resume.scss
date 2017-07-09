@@ -1,0 +1,8 @@
+#resumediv {
+	padding-top: 5rem;
+	margin: 0 auto;
+	max-width: $lgtablet;
+	@include mdTablet {
+		padding-top: 9rem;
+	}
+}

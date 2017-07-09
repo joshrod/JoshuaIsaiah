@@ -1,0 +1,60 @@
+.text-pic-link {
+	@include clearfix;
+	position: relative;
+	@include smDesktop {
+		@include flexbox;
+		width: 85%;
+		margin: 0 auto 2rem;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: row-reverse;
+		        flex-direction: row-reverse;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+	}
+
+	.text {
+		@include smDesktop {
+			padding-left: 10rem;
+		}
+		@include mdDesktop {
+			padding-left: 15rem;
+		}
+	}
+
+	p {
+		margin-top: 0;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		line-height: 1.5;
+		@include mdTablet {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			font-size: 1.8rem;
+		}
+	}
+
+	img {
+		display: none;
+		@include smDesktop {
+			width: 25rem;
+			display: block;
+		}
+	}
+
+	.linkbox {
+		width: calc(100% - 2rem);
+		margin: 2rem auto;
+		@include mdTablet {
+			width: calc(100% - 3rem);
+			margin: 3rem auto;
+		}
+		@include smDesktop {
+			width: 25rem;
+		}
+	}
+}

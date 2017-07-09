@@ -1,0 +1,47 @@
+#projectnav {
+	@include clearfix;
+	width: 100%;
+	margin-bottom: 4rem;
+	position: relative;
+
+	a {
+		font-family: $headerfont;
+		font-size: 1.6rem;
+		font-weight: 800;
+		text-decoration: none;
+		color: black;
+		@include mdTablet {
+			font-size: 2.4rem;
+		}
+	}
+
+	#prevproject {
+		display: inline-block;
+		float: left;
+
+		#leftarrow {
+			@include left-arrow(5px);
+			@include mdTablet {
+				@include left-arrow(8px);
+			}
+		}
+	}
+
+	#nextproject {
+		display: inline-block;
+		float: right;
+
+		#rightarrow {
+			@include right-arrow(5px);
+			@include mdTablet {
+				@include right-arrow(8px);
+			}
+		}
+	}
+
+	.projecttext {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

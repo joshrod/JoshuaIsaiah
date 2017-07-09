@@ -1,0 +1,118 @@
+.navbar {
+	@include navSlide();
+	width: 100%;
+	height: 5rem;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	&.hidden {
+		@include shift(0, -100%);
+	}
+	@include mdTablet {
+		height: 9rem;
+	}
+}
+
+#navwrap {
+	@include clearfix;
+	width: 100%;
+	max-width: $lgdesktop;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+
+	#navname {
+		@include shift(-50%, -50%);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		white-space: nowrap;
+		@include mdTablet {
+			@include shift(0, -50%);
+			left: 4rem;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+			color: white;
+			@include mdTablet {
+				font-size: 2.2rem;
+			}
+			@include smDesktop {
+				font-size: 2.4rem;
+			}
+		}
+	}
+
+	nav {
+		@include mdTablet {
+			@include clearfix;
+			height: 9rem;
+			margin-right: 4rem;
+			display: inline-block;
+			float: right;
+		}
+
+		.navlinks {
+			@include mdTablet {
+				display: inline-block;
+			}
+		}
+
+		.active {
+			color: white;
+		}
+
+		a {
+			display: none;
+			font-family: $headerfont;
+			font-weight: 800;
+			text-decoration: none;
+			text-transform: lowercase;
+			text-align: center;
+			&:hover {
+				color: white;
+			}
+			@include mdTablet {
+				height: 100%;
+				margin: 0;
+				padding: 3.5rem 1.1rem;
+				float: right;
+				font-size: 1.8rem;
+				color: $darkgray;
+				&:first-child {
+					padding-right: 0;
+				}
+			}
+			@include smDesktop {
+				padding: 3.4rem 1.1rem;
+				font-size: 2rem;
+				margin: 0 1rem;
+			}
+		}
+
+		#more {
+			@include shift(0, -50%);
+			width: 4rem;
+			height: 100%;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			display: block;
+			@include mdTablet {
+				display: none;
+			}
+		}
+
+		img {
+			@include shift(0, -50%);
+			width: 2rem;
+			position: relative;
+			top: 50%;
+		}
+	}
+}

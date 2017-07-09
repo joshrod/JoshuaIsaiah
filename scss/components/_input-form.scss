@@ -1,0 +1,96 @@
+#contactwrapper {
+	h1 {
+		@include smDesktop {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 3rem;
+		}
+	}
+}
+
+#formwrap {
+	padding: 0 1rem;
+	@include mdTablet {
+		margin-bottom: 2rem;
+		padding: 0 1.5rem;
+	}
+	@include smDesktop {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5rem;
+		padding: 0 2rem;
+	}
+}
+
+.field {
+	margin: 1.5rem auto;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+label, #form-messages {
+	font-family: $headerfont;
+	font-weight: 800;
+	text-transform: lowercase;
+	@include smTablet {
+		font-size: 2rem;
+	}
+	@include smDesktop {
+		font-size: 2.4rem;
+	}
+}
+
+#form-messages {
+	text-align: center;
+}
+
+input {
+	width: 100%;
+	height: 3.5rem;
+	font-size: 1.6rem;
+	@include smTablet {
+		height: 4.5rem;
+		font-size: 2rem;
+	}
+	@include smDesktop {
+		height: 5rem;
+		font-size: 2.4rem;
+	}
+}
+
+textarea {
+	width: 100%;
+	height: 15rem;
+	font-size: 1.6rem;
+	resize: none;
+	@include smTablet {
+		height: 22rem;
+		font-size: 2rem;
+	}
+	@include smDesktop {
+		height: 24rem;
+		font-size: 2.4rem;
+	}
+}
+
+button {
+	width: 100%;
+	height: 3.5rem;
+	background-color: black;
+	font-family: $headerfont;
+	font-weight: 800;
+	color: white;
+	border: none;
+	cursor: pointer;
+	@include smTablet {
+		height: 4.5rem;
+		font-size: 2rem;
+	}
+	@include smDesktop {
+		height: 5rem;
+		font-size: 2.4rem;
+	}
+}

@@ -163,7 +163,7 @@ nav a {
 *********************************************************************************/
 
 #mainpic {
-	background: url("JoshRod2.png");
+	background: url("../images/JoshRod2.png");
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
@@ -392,7 +392,7 @@ nav a {
 	text-align: center;
 }
 
-#copyright p {
+#copyright h1 {
 	margin: 0;
 	color: white;
 	font-weight: 800;
@@ -409,7 +409,7 @@ nav a {
 	height: 40rem;
 	margin: 0 auto;
 	position: relative;
-	background: url('JoshRod1BW.png');
+	background: url('../images/JoshRod1BW.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
@@ -592,7 +592,7 @@ nav a {
 	height: 40rem;
 	margin: 0 auto;
 	position: relative;
-	background: url('designpicBW.png');
+	background: url('../images/designpicBW.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center left;
@@ -921,7 +921,7 @@ nav a {
 	height: 40rem;
 	margin: 0 auto;
 	position: relative;
-	background: url('alamoBW.png');
+	background: url('../images/alamoBW.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;

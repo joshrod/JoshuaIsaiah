@@ -9,7 +9,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 			<link rel="canonical" href="http://joshuaisaiah.com"/>
-			<link type="text/css" rel="stylesheet" href="custom.css" />
+			<link type="text/css" rel="stylesheet" href="css/main.css" />
 			<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
 			<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800" rel="stylesheet">
 		</head>
@@ -24,7 +24,7 @@
 						<a href="/blog" class="navlinks" title="Tough On The">Blog</a>
 						<a href="/about" class="navlinks" title="What We Talkin'">About</a>
 						<a href="/" class="navlinks" title="Ain't Got No Investment">Portfolio</a>
-						<a id="more" href="javascript:;"><img src="hamburger.svg" ></a>
+						<a id="more" href="javascript:;"><img src="images/hamburger.svg" ></a>
 					</nav>
 				</div>
 			</div>
@@ -42,17 +42,20 @@
 					<a class="ractive" href="javascript:;" title="Point Of">contact</a>
 				</div>
 			</div>
-			<div id="contactheaderpic" class="headerpic">
+			<div id="contactheaderpic" class="hero mainsection">
 				<div id="hellodiv">
 					<div id="hellowrap">
 						<h1>Contact</h1>
 						<p>I am currently available for full-time and contract work.</p>
 					</div>
+					<div id="arrowwrap">
+						<a id="darrow" href="#contact"></a>
+					</div>
 				</div>
 			</div>
-			<div id="contact" class="infosection">
+			<div id="contact" class="mainsection">
 				<div id="contactwrapper" class="infowrap">
-					<h1>email me</h1>
+					<h1 class="heading">email me</h1>
 					<div id="formwrap">
 	  					<div id="form-messages"></div>
 						<form id="contactform" method="post" action="mailer.php">
@@ -75,24 +78,24 @@
 					</div>
 				</div>
 			</div>
-			<div id="social" class="infosection">
+			<div id="social" class="mainsection">
 				<div id="socialwrapper" class="infowrap">
 					<div class="socialwrap">
-						<p>For the more technical things, visit my GitHub Profile:
+						<h3>For the more technical things, visit my GitHub Profile:</h3>
 						<div id="githubwrap">
 							<a href="https://github.com/joshrod" target="_blank">
-								<img src="githubicon.png" alt="Joshua Rodriguez GitHub" />
+								<img src="images/githubicon.png" alt="Joshua Rodriguez GitHub" />
 							</a>
 						</div>
 					</div>
 					<div class="socialwrap">
-						<p>Colorin Colorado, este sitio se ha acabado.</p>
+						<h3>Colorin Colorado, este sitio se ha acabado.</h3>
 						<div id="socialicons">
 							<a href="https://www.facebook.com/joshrodriguez17" target="_blank">
-								<img id="facebook" src="facebook.png" alt="Joshua Rodriguez Facebook"/>
+								<img id="facebook" src="images/facebook.png" alt="Joshua Rodriguez Facebook"/>
 							</a>
 							<a href="https://www.linkedin.com/in/joshua-rodriguez-aa8aa7121" target="_blank" >
-								<img id="linkedin" src="linkedin.png" alt="Joshua Rodriguez LinkedIn" />
+								<img id="linkedin" src="images/linkedin.png" alt="Joshua Rodriguez LinkedIn" />
 							</a>
 						</div>
 					</div>
@@ -101,7 +104,7 @@
 			<div id="footer">
 				<div id="footerwrap">
 					<div id="copyright">
-						<p>&#169;2017 Joshua Isaiah Rodriguez</p>
+						<h1>&#169;2017 Joshua Isaiah Rodriguez</h1>
 					</div>
 				</div>
 			</div>
@@ -116,7 +119,7 @@
 			  ga('send', 'pageview');
 
 			</script>
-			<script src="smoothscroll.js"></script>
-			<script src="script.js"></script>
+			<script src="js/smoothscroll.js"></script>
+			<script src="js/script.js"></script>
 		</body>
 	</html>

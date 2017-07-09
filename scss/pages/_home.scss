@@ -1,0 +1,18 @@
+#mainpic {
+	@include bg-pic('../images/JoshRod2.png', center bottom);
+	height: 50rem;
+	@include mdPhone {
+		height: 65rem;
+	}
+	@include mdTablet {
+		height: 80rem;
+	}
+	@include smDesktop {
+		height: 75rem;
+	}
+}
+
+#sitefeatures {
+	background-color: $lightgray;
+	box-shadow: none;
+}

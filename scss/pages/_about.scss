@@ -1,0 +1,19 @@
+#aboutheaderpic {
+	@include bg-pic('../images/JoshRod1BW.png', center bottom);
+}
+
+#graphicbar {
+	background-color: $bloodred;
+}
+
+#webbar {
+	background-color: $oceanblue;
+}
+
+#clientbar {
+	background-color: $olivegreen;
+}
+
+#javabar {
+	background-color: $burntorange;
+}

@@ -1,0 +1,75 @@
+#recentblogwrap {
+	@include mdTablet {
+		@include flexbox;
+		padding: 0 1.5rem;
+	}
+	@include lgTablet {
+		display: block;
+	}	
+
+	.recentblog {
+		@include mdTablet {
+			width: calc(33% - 1rem);
+			&:nth-child(2n) {
+				margin: 0 2rem;
+			}
+		}
+		@include lgTablet {
+			width: 100%;
+			&:nth-child(2n) {
+				margin: 2rem auto;
+			}
+		}
+	}
+
+	.recentlink {
+		@include flexbox;
+		color: black;
+		text-decoration: none;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		@include mdTablet {
+			display: block;
+		}
+	}
+
+	.recentpic {
+		width: 40%;
+		padding: 0 1rem;
+		@include mdTablet {
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+	.recenttext {
+		width: 60%;
+		padding-right: 1rem;
+		@include mdTablet {
+			width: 100%;
+			padding-right: 0;
+		}
+	}
+
+	.recenttitle {
+		h1 {
+			font-size: 1.6rem;
+			@include mdPhone {
+				font-size: 1.8rem;
+			}
+
+			@include lgPhone {
+				font-size: 2rem;
+			}
+
+		}
+	}
+
+	.recentdate {
+		h3 {
+			font-family: $bodyfont;
+			font-size: 1.4rem;
+		}
+	}
+}

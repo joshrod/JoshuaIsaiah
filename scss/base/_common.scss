@@ -1,0 +1,70 @@
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+%entire-page {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	@extend %entire-page;
+	font-size: 62.5%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	@include clearfix;
+	@include flexbox;
+	min-height: 100%;
+	font-size: 1.6rem;
+	background-color: $lightgray;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+h1, h3 {
+	font-family: $headerfont;
+	font-weight: 800;
+}
+
+p, li {
+	font-family: $bodyfont;
+	font-weight: 400;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.mainsection {
+	@include clearfix;
+	width: 100%;
+	max-width: $lgdesktop;
+	margin: 0 auto 2rem;
+	background-color: white;
+	-webkit-box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+	        box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+	
+}
+
+.heading {
+	margin: 0;
+	padding: 1rem;
+	@include mdTablet {
+		padding: 1.5rem;
+		font-size: 3.6rem;
+	}
+	@include smDesktop {
+		padding: 2rem;
+	}
+}

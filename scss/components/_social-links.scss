@@ -1,0 +1,81 @@
+#socialwrapper {
+	margin: 0 auto 1rem;
+	padding: .5rem 1rem;
+	@include mdTablet {
+		padding: 1.5rem;
+	}
+	@include smDesktop {
+		width: 80%;
+		padding: 2rem;
+	}
+}
+
+.socialwrap {
+	@include clearfix;
+	text-align: center;
+	position: relative;
+	@include mdTablet {
+		&:first-child {
+			margin-bottom: 4rem;
+		}
+	}
+
+	h3 {
+		@include mdTablet {
+			@include shift(0, -50%);
+			margin: 0;
+			font-size: 2rem;
+			position: absolute;
+			top: 50%;
+		}
+		@include mdDesktop {
+			font-size: 2.4rem;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	img {
+		@include transitionFX(.3s);
+		opacity: .8;
+		&:hover {
+			@include zoomPic;
+			opacity: 1;
+		}
+	}
+}
+
+#githubwrap {
+	@include mdTablet {
+		float: right;
+	}
+
+	img {
+		width: 10rem;
+		@include mdTablet {
+			width: 12rem;
+		}
+		@include smDesktop {
+			width: 13rem;
+		}
+	}	
+}
+
+#socialicons {
+	@include mdTablet {
+		float: right;
+	}
+
+	img {
+		width: auto;
+		height: 8rem;
+		@include mdTablet {
+			height: 10rem;
+		}
+		@include smDesktop {
+			height: 11rem;
+		}
+	}
+}

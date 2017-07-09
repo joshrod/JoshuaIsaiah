@@ -1,0 +1,25 @@
+.linkbox {
+	@include transitionFX(.1s);
+	border: 3px solid black;
+	text-align: center;
+	&:hover {
+		background-color: black;
+	}
+
+	a {
+		@include transitionFX(.1s);
+		width: 100%;
+		height: 100%;
+		padding: 1.2rem;
+		font-family: $headerfont;
+		font-size: 1.2rem;
+		font-weight: 800;
+		color: black;
+		text-decoration: none;
+		display: block;
+		&:hover {
+			color: white;
+		}
+	}
+
+}
