@@ -12,17 +12,21 @@
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
 	}
 
 	.text {
 		@include smDesktop {
-			padding-left: 10rem;
+			width: 70%;
+		}
+	}
+
+	.pic-link {
+		@include smDesktop {
+			display: inline-block;
+			margin-right: 5rem;
 		}
 		@include mdDesktop {
-			padding-left: 15rem;
+			margin-right: 12rem;
 		}
 	}
 
@@ -36,6 +40,10 @@
 			padding-right: 1.5rem;
 			font-size: 1.8rem;
 		}
+		@include smDesktop {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 
 	img {
@@ -43,6 +51,8 @@
 		@include smDesktop {
 			width: 25rem;
 			display: block;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 

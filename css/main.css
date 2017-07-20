@@ -660,7 +660,11 @@ img {
       transform: translate(-50%, 0);
       position: absolute;
       bottom: 5%;
-      left: 50%; }
+      left: 50%;
+      text-align: center; }
+    .hero #hellodiv p {
+      padding-bottom: 1rem;
+      color: white; }
     .hero #hellodiv a {
       width: 0;
       height: 0;
@@ -1163,6 +1167,17 @@ button {
   #projectnav .projecttext:hover {
     text-decoration: underline; }
 
+#smflyer, #cycflyer {
+  width: 50%;
+  margin-right: 2%;
+  float: left; }
+
+#smcover, #sminsta, #cycbanner, #cycinsta {
+  width: 47%; }
+
+#cycflyer, #cycbanner, #cycinsta {
+  border: 1px solid #ddd; }
+
 #footer {
   width: 100%;
   height: 5rem;
@@ -1260,16 +1275,17 @@ button {
       flex-direction: row-reverse;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; } }
+      align-items: center; } }
   @media (min-width: 960px) {
     .text-pic-link .text {
-      padding-left: 10rem; } }
+      width: 70%; } }
+  @media (min-width: 960px) {
+    .text-pic-link .pic-link {
+      display: inline-block;
+      margin-right: 5rem; } }
   @media (min-width: 1160px) {
-    .text-pic-link .text {
-      padding-left: 15rem; } }
+    .text-pic-link .pic-link {
+      margin-right: 12rem; } }
   .text-pic-link p {
     margin-top: 0;
     padding-left: 1rem;
@@ -1280,12 +1296,18 @@ button {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         font-size: 1.8rem; } }
+    @media (min-width: 960px) {
+      .text-pic-link p {
+        padding-left: 0;
+        padding-right: 0; } }
   .text-pic-link img {
     display: none; }
     @media (min-width: 960px) {
       .text-pic-link img {
         width: 25rem;
-        display: block; } }
+        display: block;
+        margin-left: auto;
+        margin-right: auto; } }
   .text-pic-link .linkbox {
     width: calc(100% - 2rem);
     margin: 2rem auto; }
