@@ -37,6 +37,25 @@
 		}
 	}
 
+	.two-linkboxes {
+		margin: 4rem auto;
+		text-align: center;
+		@include mdTablet {
+			margin: 10rem auto;
+		}
+		@include smDesktop {
+			margin: 12rem auto;
+		}
+
+		.linkbox {
+			margin: 0 0 2rem;
+			display: inline-block;
+			@include mdTablet {
+				margin-left: 3rem;
+				margin-right: 3rem;
+			}
+		}
+	}
 }
 
 .processpicwrap, .smallerheader, #projectnav {

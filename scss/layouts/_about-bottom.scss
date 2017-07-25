@@ -1,0 +1,26 @@
+.about-bottom {
+	margin-bottom: 0;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+
+	@include smDesktop {
+		@include flexbox;
+	}
+
+	.about-card {
+		margin: 0 auto 2rem;
+		background-color: white;
+		-webkit-box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+	        box-shadow: 0 2px 8px 0 rgba(128, 128, 128, 0.2), 0 3px 10px 0 rgba(128, 128, 128, 0.2);
+	    @include smDesktop {
+	    	width: 50%;
+	    	&:nth-of-type(1) {
+	    		margin-right: 1rem;
+	    	}
+	    	&:nth-of-type(2) {
+	    		margin-left: 1rem;
+	    	}
+	    }
+	}
+}

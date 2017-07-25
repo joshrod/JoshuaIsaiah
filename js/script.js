@@ -64,20 +64,12 @@ $(window).on('load', function() {
 		if($(window).width() > 680) {
 			$('#responsive').hide();
 		}
-
-		windowMockCheck();
-
-
 	});
-
-	windowMockCheck();
 
 	$('#darrow').smoothScroll();
 	$('.recentlink').smoothScroll();
 
 	$('#hellodiv').delay(500).fadeIn(1000);
-
-	fillbar();
 
 	fadepic();
 
@@ -87,8 +79,6 @@ $(window).on('load', function() {
 
   		$('.navbar').toggleClass('hidden', topWindow > prev);
   		prev = topWindow;
-	
-        fillbar();
     	
     	fadepic();
 
@@ -99,70 +89,18 @@ $(window).on('load', function() {
     });
 });
 
-function fillbar() {
-	$('.barfill').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            if( bottom_of_window > bottom_of_object ){
-               	if($(this).is('#graphicbar')) {
-               		$('#graphicbar').stop().animate({'width': "98%"}, 500);
-               	}
-               	if($(this).is('#webbar')) {
-               		$('#webbar').stop().animate({'width': "95%"}, 500);
-               	}  
-               	if($(this).is('#clientbar')) {
-               		$('#clientbar').stop().animate({'width': "98%"}, 500);
-               	}  
-               	if($(this).is('#javabar')) {
-               		$('#javabar').stop().animate({'width': "70%"}, 500);
-               	}  
-            }
-
-            else {
-            	if($(this).is('#graphicbar')) {
-               		$('#graphicbar').stop().animate({'width': "0"}, 500);
-               	}
-               	if($(this).is('#webbar')) {
-               		$('#webbar').stop().animate({'width': "0"}, 500);
-               	}  
-               	if($(this).is('#clientbar')) {
-               		$('#clientbar').stop().animate({'width': "0"}, 500);
-               	}  
-               	if($(this).is('#javabar')) {
-               		$('#javabar').stop().animate({'width': "0"}, 500);
-               	} 
-            }
-        });
-}
-
-function windowMockCheck() {
-	if ($(window).width() >= 623) {
-		$('#latinnightmock img').css("width", "auto");
-		$('#sanantoniomock img').css("width", "auto");
-	}
-
-	else {
-		$('#latinnightmock img').css("height", "auto");
-		$('#latinnightmock img').css("width", "100%");
-		$('#sanantoniomock img').css("height", "auto");
-		$('#sanantoniomock img').css("width", "100%");
-	}
-}
-
 function fadepic() {
 	$('.fadepic').each( function(i){
-            var objectTop = $(this).offset().top;
-            var objectBottom = $(this).offset().top + $(this).outerHeight();
-            var windowBottom = $(window).scrollTop() + $(window).height();
-            var windowTop = $(window).scrollTop();
+        var objectTop = $(this).offset().top;
+        var objectBottom = $(this).offset().top + $(this).outerHeight();
+        var windowBottom = $(window).scrollTop() + $(window).height();
+        var windowTop = $(window).scrollTop();
 
-            if( windowBottom > objectTop + 50){
-                $(this).animate({'opacity':'1'}, 400);
-            }
+        if( windowBottom > objectTop + 50){
+            $(this).animate({'opacity':'1'}, 400);
+        }
 
-        }); 
+    }); 
 }
 
 
