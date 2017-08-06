@@ -50,6 +50,7 @@ $(function() {
 
 });
 
+/*
 $(window).on('load', function() {
 
 	var prev = $('.navbar').height();
@@ -101,7 +102,138 @@ function fadepic() {
         }
 
     }); 
-}
+}*/
+
+window.onload = function() {
+
+	var navbar = getNavbar();
+
+	//Navbar height needed for getNavbar function at the bottom
+	var prev = navbar.clientHeight;
+
+	//Variables used to slide the responsive navbar
+	var hamburger = document.getElementById('more');
+	var responsiveMenu = document.getElementById('responsive');
+	var navOpen = false;
+	var initialHeight = 200;
+
+	//.5s delay and then fade in the intro text
+	var introOverlay = document.getElementById('hellodiv');
+	if(introOverlay) {
+		setTimeout(fadeIn(introOverlay), 500);
+	}
+
+	//Fade in pictures on reload 
+	fadePic();
+	
+	/***********
+					   EVENT LISTENERS
+												************/
+
+	hamburger.addEventListener('click', function() {
+		slideNav();
+	});
+
+	window.addEventListener('scroll', function() {
+		hideNavbar();
+
+		if (navOpen) {
+			slideNav();
+		}
+
+		fadePic();
+	});
+
+	window.addEventListener('resize', function() {
+
+		//Close responsive navigation if it's open and resizing over tablet width
+		if (window.innerWidth > 680 && navOpen) {
+			slideNav();
+		}
+	});
+
+	/***********
+					   	  FUNCTIONS
+											    ************/
+
+	function getNavbar() {
+		var classArray = document.getElementsByClassName('navbar');
+		return classArray[0];
+	}
+
+	function hideNavbar() {
+		var topOfWindow = (window.pageYOffset !== undefined) ? window.pageYOffset : 
+						  (document.documentElement || document.body.parentNode || 
+						   document.body).scrollTop;
+		if (topOfWindow > prev) {
+			if (navbar.className != 'navbar hidden') {
+				navbar.className += ' hidden';
+			}
+		}
+		else {
+			navbar.className = 'navbar';
+		}
+		prev = topOfWindow;
+	}
+
+	//Toggles the responsive navigation sliding it up or down
+	function slideNav() {
+		var rnavLinks = document.getElementsByClassName('rnav');
+		var linkTags = responsiveMenu.getElementsByTagName('a');
+
+		if (navOpen) {
+			navOpen = false;
+			responsiveMenu.style.height = '0px';
+			for (var i = 0; i < rnavLinks.length; i++) {
+				rnavLinks[i].style.height = '0px';
+				linkTags[i].style.display = 'none';
+			}
+		}
+
+		else {
+			navOpen = true;
+			responsiveMenu.style.height = initialHeight + 'px';
+			for (var i = 0; i < rnavLinks.length; i++) {
+				rnavLinks[i].style.height = '5rem';
+				linkTags[i].style.display = 'inline-block';
+			}
+		}
+	}
+
+	function fadeIn(element) {
+		element.style.display = 'block';
+		element.style.opacity = 0;
+
+		var step = function() {
+			element.style.opacity = +element.style.opacity + 0.03;
+
+
+		    if (+element.style.opacity < 1) {
+		      (window.requestAnimationFrame && requestAnimationFrame(step)) || setTimeout(step, 16);
+		    }
+		};
+		step();
+	}
+
+	/*****
+		    Fades the element in when the bottom of window reaches 
+		    50px after element's top position by calling fadeIn()
+		   														    *****/
+	function fadePic() {
+		var windowBottom = window.pageYOffset + window.innerHeight;
+		var fadedItems = document.getElementsByClassName('fadepic');
+		var elementBounds;
+		var elementTop;
+		for (var i = 0; i < fadedItems.length; i++) {
+			elementBounds = fadedItems[i].getBoundingClientRect();
+			elementTop = elementBounds.top + window.pageYOffset - document.body.clientTop;
+			if (windowBottom > elementTop + 50 && +fadedItems[i].style.opacity == 0) {
+				fadeIn(fadedItems[i]);
+			}
+		}
+		
+	}
+};
 
 
 
