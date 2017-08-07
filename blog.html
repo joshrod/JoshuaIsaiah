@@ -7,7 +7,7 @@
 			<meta name="description" content="Joshua Isaiah Rodriguez's blog shares insights and tools useful for web development and graphic design. Read his latest snippets here.">
 			<meta name="author" content="Joshua Isaiah Rodriguez">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+			<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 			<link rel="canonical" href="http://joshuaisaiah.com"/>
 			<link type="text/css" rel="stylesheet" href="css/main.css" />
 			<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
@@ -54,6 +54,28 @@
 				</div>
 			</div>
 			<div id="blogpagewrap">
+				<div id="gulp" class="blogpost mainsection topblog">
+					<div class="blogwrap infowrap">
+						<div class="blogtitle">
+							<h1>how i set up and use gulp.js and sass on my old macbook</h1>
+						</div>
+						<div class="blogdate">
+							<h3>August 6, 2017</h3>
+						</div>
+						<div class="blogpic">
+							<img src="images/css-screen.jpg" alt="CSS Picture"/>
+						</div>
+						<div class="blogtext">
+							<p>As stated in my <a href="/madisondrinks">MadisonDrinks</a> case study, I currently use an early 2008 Macbook running OSX Lion. As much as Chrome likes to remind me that there is no support for my browser version and I need to upgrade, we're kind of stuck here so we have to make the most of what we've got.<br><br>
+							First off, I needed to update my version of Ruby to version 2.0. For this, I used <a href="https://rvm.io" target="_blank">Ruby Version Manager (RVM)</a> and followed the instructions on the front and "Install" pages to properly install RVM and use version 2.0 by default (go to the "Try out your new RVM installation" section for help on this).<br><br>
+							Next, I followed <a href="https://css-tricks.com/gulp-for-beginners/" target="_blank">CSS-Tricks' Gulp for Beginners</a> closely, but with some major changes. I didn't use "gulp-sass", but "ruby-sass" instead. I also didn't use any of the plugins involved in the "build" task. So this only leaves "watch", "ruby-sass", "browserSync", and "runSequence". Most other plugins included in the article can't run on Mac OSX Lion, making the "build" task useless.<br><br>
+							This means that I need to do my minifying and optimizing using services online. Not a huge deal here. Optimizing my workflow is more important as I'm working rather than when I'm finished.<br><br>
+							The file structure used in the CSS-Tricks article follows how I like to organize my files, so organizing my Sass folder with <a href="https://smacss.com" target="_blank">SMACSS</a> came naturally. I haven't used States and Themes enough to incorporate them in my folder structure, but every other category is included in my directory, including a new "Pages" category to handle those page-specific styles (like my hero pics on this website).<br><br>
+							In every category folder is a directory Sass file that imports every partial there. Then, each directory Sass file is imported into a "main.scss" file at the beginning of the "/scss" folder, which is also where I keep my "variables.scss" and "mixins.scss" files so that they're globally available.<br><br>
+							Finally, we've got our workflow going with great file organization. Gulp watches for any changes in .html, .scss, and .js files, compiles Sass if needed, and automatically reloads the browser with our new changes included in that order.
+						</div>
+					</div>
+				</div>
 				<div id="podcasts" class="blogpost mainsection topblog">
 					<div class="blogwrap infowrap">
 						<div class="blogtitle">
@@ -178,6 +200,21 @@
 						<h1 id="recentheader" class="heading">recent posts</h1>
 						<div id="recentblogwrap">
 							<div class="recentblog">
+								<a class="recentlink" href="#gulp">
+									<div class="recentpic">
+										<img src="images/css-screen.jpg" alt="CSS Background" />
+									</div>
+									<div class="recenttext">
+										<div class="recenttitle">
+											<h1>how i set up and use gulp.js and sass on my old macbook</h1>
+										</div>
+										<div class="recentdate">
+											<h3>August 6, 2017</h3>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="recentblog">
 								<a class="recentlink" href="#podcasts">
 									<div class="recentpic">
 										<img src="images/podcast.png" alt="Podcast Background" />
@@ -203,21 +240,6 @@
 										</div>
 										<div class="recentdate">
 											<h3>May 17, 2017</h3>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="recentblog">
-								<a class="recentlink" href="#clientprocess">
-									<div class="recentpic">
-										<img src="images/client.png" alt="Client Background" />
-									</div>
-									<div class="recenttext">
-										<div class="recenttitle">
-											<h1>6 questions to go over with your client before creating their website</h1>
-										</div>
-										<div class="recentdate">
-											<h3>May 6, 2017</h3>
 										</div>
 									</div>
 								</a>
